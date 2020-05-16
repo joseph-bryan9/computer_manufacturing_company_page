@@ -8,13 +8,64 @@
       lenovo.com
     </title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="container">
-      <!-- Header-menu -->
-      <section>
-        <div class="header-grid">
-          <div class="logo"></div>
+      <!-- Header-menu Section -->
+      <section class="header-grid">
+        <a href="#" class="logo"></a>
+        <div class="grid">
+          <div class="flex">
+            <a href="#"
+              ><object data="assets/contact.svg" type="image/svg+xml"></object>
+              contact</a
+            >
+            <a href="#"
+              ><object data="assets/account.svg" type="image/svg+xml"></object
+              >account</a
+            >
+            <a href="#"
+              ><object data="assets/cart.svg" type="image/svg+xml"></object
+              >cart</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Burger-menu & Search-box Section -->
+      <section class="burger-search-flex">
+        <div>
+          <a href="#"><i class="fas fa-bars fa-3x"></i>explore</a>
+        </div>
+        <div>
+          <form class="search-filled" action="#">
+            <input type="text" placeholder="WHAT ARE YOU LOOKING FOR?" />
+            <button class="search-btn" type="submit">
+              <i class="fas fa-search fa-lg"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Sticky Nav-menu Hidden by default -->
+      <section class="sticky-nav-menu">
+        <div class="flex">
+          <a href="#"><i></i>explore</a>
+        </div>
+        <div class="flex">
+          <div class="flex">
+            <a href="#"><i></i>search</a>
+          </div>
           <div class="flex">
             <a href="#"><i></i>contact</a>
           </div>
@@ -27,59 +78,15 @@
         </div>
       </section>
 
-      <!-- Burger-menu & Search-box -->
-      <section>
-        <div class="burger-search-flex">
-          <div class="flex">
-            <a href="#"><i></i>explore</a>
-          </div>
-          <div>
-            <form action="#">
-              <form class="search-filled" action="#">
-                <input type="text" placeholder="WHAT ARE YOU LOOKING FOR?" />
-                <button class="search-btn" type="submit">
-                  <!-- <i class="ms-Icon ms-font-xl ms-Icon--Search"></i> -->
-                </button>
-              </form>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <!-- Sticky Nav-menu Hidden by default -->
-      <section>
-        <div class="sticky-nav-menu">
-          <div class="flex">
-            <a href="#"><i></i>explore</a>
-          </div>
-          <div class="flex">
-            <div class="flex">
-              <a href="#"><i></i>search</a>
-            </div>
-            <div class="flex">
-              <a href="#"><i></i>contact</a>
-            </div>
-            <div class="flex">
-              <a href="#"><i></i>account</a>
-            </div>
-            <div class="flex">
-              <a href="#"><i></i>cart</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- Showcase Section -->
       <section class="showcase">
-        <div class="flex">
-          <div>
-            <h1>Smarter Technology for all</h1>
-            <p>See how Lenovo's technology transforms the world.</p>
-            <!-- Another Flexbox -->
-            <div class="flex">
-              <a href="#">explore more</a>
-              <a href="#"> covid-19 response</a>
-            </div>
+        <div class="text-bg">
+          <h1>Smarter Technology for all</h1>
+          <p>See how Lenovo's technology transforms the world.</p>
+          <!-- Another Flexbox -->
+          <div class="flex">
+            <a href="#">explore more</a>
+            <a href="#"> covid-19 response</a>
           </div>
         </div>
       </section>
@@ -87,20 +94,28 @@
       <!-- Cards Section -->
       <section class="cards">
         <div>
-          <img src="" alt="" />
-          <p>PCs & Tablets</p>
+          <a href="#"
+            ><img src="/assets/card-1.jpg" alt="" /><span
+              >PCs & Tablets</span
+            ></a
+          >
         </div>
         <div>
-          <img src="" alt="" />
-          <p>Phones</p>
+          <a href="#"
+            ><img src="/assets/card-2.jpg" alt="" /><span>Phones</span></a
+          >
         </div>
         <div>
-          <img src="" alt="" />
-          <p>Smart Devices</p>
+          <a href="#"
+            ><img src="/assets/card-3.jpg" alt="" /><span
+              >Smart Devices</span
+            ></a
+          >
         </div>
         <div>
-          <img src="" alt="" />
-          <p>Data Center</p>
+          <a href="#"
+            ><img src="/assets/card-4.jpg" alt="" /><span>Data Center</span></a
+          >
         </div>
       </section>
 

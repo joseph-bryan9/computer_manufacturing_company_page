@@ -1,0 +1,218 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  min-width: 380px;
+}
+
+.header-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.header-grid .logo {
+  background: url("/assets/logo.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  max-width: 127px;
+}
+
+.header-grid .grid {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.header-grid .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-right: 8px;
+}
+
+.header-grid .flex object {
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+}
+
+.header-grid .flex a {
+  margin: 0 10px;
+  margin-top: 0.625em;
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.burger-search-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 12px 5px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 50px;
+}
+
+.burger-search-flex div:first-child {
+  margin-right: 8px;
+}
+
+.burger-search-flex div:first-child a {
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 9px;
+}
+
+.burger-search-flex div:first-child i {
+  display: block;
+}
+
+.burger-search-flex div:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.burger-search-flex div:last-child .search-filled {
+  border: 1px solid #777;
+  border-radius: 3px;
+}
+
+.burger-search-flex div:last-child .search-filled input {
+  display: inline-block;
+  border: none;
+  width: 91%;
+  padding: 13px;
+}
+
+.burger-search-flex div:last-child .search-filled ::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
+.burger-search-flex div:last-child .search-filled :-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.burger-search-flex div:last-child .search-filled ::-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.burger-search-flex div:last-child .search-filled ::placeholder {
+  font-size: 12px;
+}
+
+.burger-search-flex div:last-child .search-filled button {
+  background: transparent;
+  border: none;
+}
+
+.sticky-nav-menu {
+  display: none;
+}
+
+.showcase {
+  background: url("/assets/world_mobile.png") no-repeat center center/cover;
+  height: 32vh;
+  position: relative;
+}
+
+.showcase .text-bg {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  padding: 16px;
+  bottom: 0;
+}
+
+.showcase .text-bg h1,
+.showcase .text-bg p {
+  color: #fff;
+  text-align: center;
+}
+
+.showcase .text-bg h1 {
+  font-size: 26px;
+  font-weight: 400;
+  padding-bottom: 3px;
+}
+
+.showcase .text-bg p {
+  line-height: 25px;
+}
+
+.showcase .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+.showcase a {
+  color: #46c8e1;
+  text-transform: uppercase;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.cards div {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.cards img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  vertical-align: middle;
+}
+
+.cards span {
+  position: absolute;
+  display: inline-block;
+  font-size: 1.1em;
+  padding: 1.2em 1em 1em 1em;
+  margin: 0 auto;
+  z-index: 1;
+}
+/*# sourceMappingURL=style.css.map */

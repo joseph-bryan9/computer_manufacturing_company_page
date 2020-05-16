@@ -1,0 +1,182 @@
+// CSS Reset
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Start
+.container {
+  min-width: 380px;
+}
+
+// Header-menu
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  .logo {
+    background: url("/assets/logo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-width: 127px;
+  }
+
+  .grid {
+    grid-column: 2 / 4;
+    justify-self: end;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+    margin-right: 8px;
+
+    object {
+      width: 1rem;
+      height: 1rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 0.5em;
+    }
+
+    a {
+      margin: 0 10px;
+      margin-top: 0.625em;
+      font-size: 9px;
+      text-transform: uppercase;
+      color: #333;
+    }
+  }
+}
+
+// Burger-menu & Search-box Section
+.burger-search-flex {
+  display: flex;
+  flex-direction: row;
+  padding: 12px 5px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 50px;
+
+  div:first-child {
+    margin-right: 8px;
+    a {
+      color: #000;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 9px;
+    }
+
+    i {
+      display: block;
+    }
+  }
+
+  div:last-child {
+    flex-grow: 1;
+
+    .search-filled {
+      border: 1px solid #777;
+      border-radius: 3px;
+
+      input {
+        display: inline-block;
+        border: none;
+        width: 91%;
+        padding: 13px;
+      }
+
+      ::placeholder {
+        font-size: 12px;
+      }
+
+      button {
+        background: transparent;
+        border: none;
+      }
+    }
+  }
+}
+
+// Sticky Nav-menu Hidden by default
+.sticky-nav-menu {
+  display: none;
+}
+
+// Showcase Section
+.showcase {
+  background: url("/assets/world_mobile.png") no-repeat center center/cover;
+  height: 32vh;
+  position: relative;
+
+  .text-bg {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    padding: 16px;
+    bottom: 0;
+
+    h1,
+    p {
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 400;
+      padding-bottom: 3px;
+    }
+
+    p {
+      line-height: 25px;
+    }
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  a {
+    color: #46c8e1;
+    text-transform: uppercase;
+    padding: 8px;
+    font-size: 16px;
+  }
+}
+
+// Card Section
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  div {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    vertical-align: middle;
+  }
+
+  span {
+    position: absolute;
+    display: inline-block;
+    font-size: 1.1em;
+    padding: 1.2em 1em 1em 1em;
+    margin: 0 auto;
+    z-index: 1;
+  }
+}
