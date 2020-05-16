@@ -62,7 +62,7 @@ a {
   padding: 12px 5px;
   padding-bottom: 2px;
   padding-left: 10px;
-  padding-right: 50px;
+  padding-right: 28px;
 
   div:first-child {
     margin-right: 8px;
@@ -178,5 +178,40 @@ a {
     padding: 1.2em 1em 1em 1em;
     margin: 0 auto;
     z-index: 1;
+  }
+}
+
+// Footer {
+footer {
+  background: #bbb;
+  padding: 0 10px;
+  color: #555;
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 12.8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+
+  form {
+    input {
+      padding: 6px;
+      font-size: 12px;
+      float: left;
+      width: 78%;
+    }
+    button {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #fff;
+      background: #414141;
+      border: none;
+      float: left;
+      padding: 3.84px;
+      height: 29px;
+    }
   }
 }
