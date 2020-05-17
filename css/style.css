@@ -198,28 +198,46 @@ a {
 
 .cards div {
   border: 1px solid rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: relative;
+  height: 119px;
 }
 
 .cards img {
   width: 100%;
-  height: auto;
-  position: relative;
-  vertical-align: middle;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cards a {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
 }
 
 .cards span {
   position: absolute;
-  display: inline-block;
-  font-size: 1.1em;
-  padding: 1.2em 1em 1em 1em;
-  margin: 0 auto;
-  z-index: 1;
+  font-size: 17.6px;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  width: 100%;
 }
 
 footer {
   background: #bbb;
   padding: 0 10px;
   color: #555;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer h3 {
@@ -247,5 +265,164 @@ footer form button {
   float: left;
   padding: 3.84px;
   height: 29px;
+}
+
+footer .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 16px;
+  padding-bottom: 10px;
+}
+
+footer .flex .fb-icon {
+  background: url("/assets/fb.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .flex .ig-icon {
+  background: url("/assets/ig.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .flex .yt-icon {
+  background: url("/assets/yt.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .flex .twitter-icon {
+  background: url("/assets/twitter.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .flex .flickr-icon {
+  background: url("/assets/flickr.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .flex .rss-icon {
+  background: url("/assets/rss.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .flex .fb-icon:hover {
+  background: url("/assets/fb-a.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .flex .ig-icon:hover {
+  background: url("/assets/ig-a.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .flex .yt-icon:hover {
+  background: url("/assets/yt-a.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .flex .twitter-icon:hover {
+  background: url("/assets/twitter-a.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .flex .flickr-icon:hover {
+  background: url("/assets/flickr-a.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .flex .rss-icon:hover {
+  background: url("/assets/rss-a.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .country-region h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer .country-region div {
+  display: inline-block;
+}
+
+footer .country-region img {
+  padding: 2px;
+  position: absolute;
+  z-index: 1;
+  height: 32px;
+}
+
+footer .country-region select {
+  display: inline-block;
+  background: #888;
+  border: 1px solid #000;
+  color: #333;
+  padding: 6px;
+  padding-left: 65px;
+  position: relative;
+}
+
+footer .country-region select option {
+  background: #fff;
+}
+
+footer .dropdown-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15px;
+}
+
+footer .dropdown-flex img {
+  position: relative;
+}
+
+footer .dropdown-flex span {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 12.8px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-top: 3px;
+}
+
+footer .dropdown-flex .dropdown {
+  border-top: 1px solid #000;
+  padding: 15px 20px;
+}
+
+footer .dropdown-flex .dropdown-content {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -162,22 +162,32 @@ a {
 
   div {
     border: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+    height: 119px;
   }
 
   img {
     width: 100%;
-    height: auto;
-    position: relative;
-    vertical-align: middle;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  a {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
   }
 
   span {
     position: absolute;
-    display: inline-block;
-    font-size: 1.1em;
-    padding: 1.2em 1em 1em 1em;
-    margin: 0 auto;
-    z-index: 1;
+    font-size: 17.6px;
+
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+    width: 100%;
   }
 }
 
@@ -186,7 +196,10 @@ footer {
   background: #bbb;
   padding: 0 10px;
   color: #555;
+  display: flex;
+  flex-direction: column;
 
+  // Email Us
   h3 {
     text-transform: uppercase;
     font-size: 12.8px;
@@ -212,6 +225,162 @@ footer {
       float: left;
       padding: 3.84px;
       height: 29px;
+    }
+  }
+
+  // Social Media Icons
+  .flex {
+    display: flex;
+    flex-direction: row;
+    padding-top: 16px;
+    padding-bottom: 10px;
+
+    .fb-icon {
+      background: url("/assets/fb.png") no-repeat center center/contain;
+      height: 33px;
+      width: 33px;
+      margin-right: 5px;
+    }
+
+    .ig-icon {
+      background: url("/assets/ig.png") no-repeat center center/contain;
+      height: 33px;
+      width: 33px;
+      margin-right: 5px;
+    }
+
+    .yt-icon {
+      background: url("/assets/yt.png") no-repeat center center/contain;
+      height: 33px;
+      width: 33px;
+      margin-right: 5px;
+    }
+
+    .twitter-icon {
+      background: url("/assets/twitter.png") no-repeat center center/contain;
+      height: 33px;
+      width: 33px;
+      margin-right: 5px;
+    }
+
+    .flickr-icon {
+      background: url("/assets/flickr.png") no-repeat center center/contain;
+      height: 33px;
+      width: 33px;
+      margin-right: 5px;
+    }
+
+    .rss-icon {
+      background: url("/assets/rss.png") no-repeat center center/contain;
+      height: 33px;
+      width: 33px;
+      margin-right: 5px;
+    }
+
+    // Social Media Icon while Hover
+    .fb-icon:hover {
+      background: url("/assets/fb-a.png") no-repeat center center/contain;
+      height: 33px;
+      width: 33px;
+      margin-right: 5px;
+    }
+
+    .ig-icon:hover {
+      background: url("/assets/ig-a.png") no-repeat center center/contain;
+      height: 33px;
+      width: 33px;
+      margin-right: 5px;
+    }
+
+    .yt-icon:hover {
+      background: url("/assets/yt-a.png") no-repeat center center/contain;
+      height: 33px;
+      width: 33px;
+      margin-right: 5px;
+    }
+
+    .twitter-icon:hover {
+      background: url("/assets/twitter-a.png") no-repeat center center/contain;
+      height: 33px;
+      width: 33px;
+      margin-right: 5px;
+    }
+
+    .flickr-icon:hover {
+      background: url("/assets/flickr-a.png") no-repeat center center/contain;
+      height: 33px;
+      width: 33px;
+      margin-right: 5px;
+    }
+
+    .rss-icon:hover {
+      background: url("/assets/rss-a.png") no-repeat center center/contain;
+      height: 33px;
+      width: 33px;
+      margin-right: 5px;
+    }
+  }
+
+  // Country/Region
+  .country-region {
+    h3 {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    img {
+      padding: 2px;
+      position: absolute;
+      z-index: 1;
+      height: 32px;
+    }
+
+    select {
+      display: inline-block;
+      background: #888;
+      border: 1px solid #000;
+      color: #333;
+      padding: 6px;
+      padding-left: 65px;
+      // padding: 6px 47px 6px 65px;
+      position: relative;
+
+      option {
+        background: #fff;
+      }
+    }
+  }
+
+  // About/ Products & Service/ Shop By/ Resources/ Customer Support
+  .dropdown-flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+
+    img {
+      position: relative;
+    }
+
+    span {
+      position: absolute;
+      text-transform: uppercase;
+      font-size: 12.8px;
+      font-weight: bold;
+      padding-left: 5px;
+      padding-top: 3px;
+    }
+
+    .dropdown {
+      border-top: 1px solid #000;
+      padding: 15px 20px;
+    }
+
+    .dropdown-content {
+      display: none;
     }
   }
 }
