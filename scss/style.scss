@@ -310,6 +310,11 @@ a {
     text-align: center;
     position: relative;
     height: 119px;
+    // Media Query 750px
+    @include mediaQuery(750px) {
+      height: 199px;
+      border-top: 1px solid rgba(0, 0, 0, 1);
+    }
   }
 
   img {
@@ -326,13 +331,18 @@ a {
 
   span {
     position: absolute;
-    font-size: 17.6px;
-
+    font-size: 25.6px;
     color: #fff;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
     width: 100%;
+
+    // Media Query 750px
+    @include mediaQuery(750px) {
+      top: 80%;
+      transform: translate(-50%, -80%);
+    }
   }
 }
 
@@ -345,6 +355,12 @@ footer {
 
   .footer-container {
     padding: 0 10px;
+
+    // Media Query 750px
+    @include mediaQuery(750px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     // Email Us
     h3 {
@@ -384,11 +400,16 @@ footer {
         padding: 3.84px;
         height: 29px;
         cursor: pointer;
-        width: 17%;
+        width: 18%;
 
         // Media Query 500px
         @include mediaQuery(500px) {
           width: 14%;
+        }
+
+        // Media Query 750px
+        @include mediaQuery(750px) {
+          width: 17%;
         }
       }
     }
@@ -399,6 +420,11 @@ footer {
       flex-direction: row;
       padding-top: 16px;
       padding-bottom: 10px;
+
+      // Media Query 750px
+      @include mediaQuery(750px) {
+        padding-bottom: 20px;
+      }
 
       .fb-icon {
         background: url("/assets/fb.png") no-repeat center center/contain;
@@ -488,6 +514,11 @@ footer {
 
     // Country/Region
     .country-region {
+      // Media Query 750px
+      @include mediaQuery(750px) {
+        justify-self: end;
+      }
+
       h3 {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -538,6 +569,11 @@ footer {
         @include mediaQuery(500px) {
           width: 80%;
         }
+
+        // Media Query 750px
+        @include mediaQuery(500px) {
+          width: 100%;
+        }
       }
       .select-box::after {
         content: "\25BC";
@@ -566,6 +602,12 @@ footer {
     flex-direction: column;
     margin-top: 15px;
 
+    // Media Query 750px
+    @include mediaQuery(750px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
     img {
       position: relative;
     }
@@ -583,6 +625,11 @@ footer {
       border-top: 1px solid #000;
       padding: 15px 20px;
       cursor: pointer;
+
+      // Media Query 750px
+      @include mediaQuery(750px) {
+        border-top: none;
+      }
     }
 
     .dropdown-content {
@@ -614,6 +661,12 @@ footer {
     color: #373737;
     border-top: 1px solid #000;
     padding: 10px 21px 168px;
+
+    // Media Query 750px
+    @include mediaQuery(750px) {
+      border-top: none;
+      padding: 0 20px;
+    }
 
     .flex {
       display: flex;

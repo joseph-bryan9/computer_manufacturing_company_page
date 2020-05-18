@@ -349,6 +349,13 @@ a {
   height: 119px;
 }
 
+@media screen and (min-width: 750px) {
+  .cards div {
+    height: 199px;
+    border-top: 1px solid black;
+  }
+}
+
 .cards img {
   width: 100%;
   height: 100%;
@@ -364,13 +371,21 @@ a {
 
 .cards span {
   position: absolute;
-  font-size: 17.6px;
+  font-size: 25.6px;
   color: #fff;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, 50%);
-          transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .cards span {
+    top: 80%;
+    -webkit-transform: translate(-50%, -80%);
+            transform: translate(-50%, -80%);
+  }
 }
 
 footer {
@@ -387,6 +402,15 @@ footer {
 
 footer .footer-container {
   padding: 0 10px;
+}
+
+@media screen and (min-width: 750px) {
+  footer .footer-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 footer .footer-container h3 {
@@ -430,12 +454,18 @@ footer .footer-container form button {
   padding: 3.84px;
   height: 29px;
   cursor: pointer;
-  width: 17%;
+  width: 18%;
 }
 
 @media screen and (min-width: 500px) {
   footer .footer-container form button {
     width: 14%;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  footer .footer-container form button {
+    width: 17%;
   }
 }
 
@@ -449,6 +479,12 @@ footer .footer-container .flex {
           flex-direction: row;
   padding-top: 16px;
   padding-bottom: 10px;
+}
+
+@media screen and (min-width: 750px) {
+  footer .footer-container .flex {
+    padding-bottom: 20px;
+  }
 }
 
 footer .footer-container .flex .fb-icon {
@@ -535,6 +571,13 @@ footer .footer-container .flex .rss-icon:hover {
   margin-right: 5px;
 }
 
+@media screen and (min-width: 750px) {
+  footer .footer-container .country-region {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+}
+
 footer .footer-container .country-region h3 {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -593,6 +636,12 @@ footer .footer-container .country-region .select-box {
   }
 }
 
+@media screen and (min-width: 500px) {
+  footer .footer-container .country-region .select-box {
+    width: 100%;
+  }
+}
+
 footer .footer-container .country-region .select-box::after {
   content: "\25BC";
   position: absolute;
@@ -624,6 +673,15 @@ footer .dropdown-flex {
   margin-top: 15px;
 }
 
+@media screen and (min-width: 750px) {
+  footer .dropdown-flex {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 footer .dropdown-flex img {
   position: relative;
 }
@@ -641,6 +699,12 @@ footer .dropdown-flex .dropdown {
   border-top: 1px solid #000;
   padding: 15px 20px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 750px) {
+  footer .dropdown-flex .dropdown {
+    border-top: none;
+  }
 }
 
 footer .dropdown-flex .dropdown-content {
@@ -676,6 +740,13 @@ footer .all-rights-reserved-flex {
   color: #373737;
   border-top: 1px solid #000;
   padding: 10px 21px 168px;
+}
+
+@media screen and (min-width: 750px) {
+  footer .all-rights-reserved-flex {
+    border-top: none;
+    padding: 0 20px;
+  }
 }
 
 footer .all-rights-reserved-flex .flex {
