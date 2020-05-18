@@ -1,3 +1,5 @@
+@import "mediaqueries";
+
 // CSS Reset
 * {
   box-sizing: border-box;
@@ -15,10 +17,15 @@ a {
   min-width: 380px;
 }
 
-// Header-menu
+// Header-menu Default
 .header-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
+  // Media Query 750px
+  @include mediaQuery(46.875em) {
+    display: none;
+  }
 
   .logo {
     background: url("/assets/logo.png");
@@ -55,6 +62,90 @@ a {
   }
 }
 
+// Header-menu for 750px up
+.header-grid-750px {
+  display: none;
+  // Media Query 750px
+  @include mediaQuery(46.875em) {
+    display: block;
+    padding-bottom: 10px;
+
+    .header-grid-750px-grid {
+      display: grid;
+      grid-template-columns: 65px 127px 308px 1fr;
+
+      div:first-child {
+        margin-right: 8px;
+        margin-left: 8px;
+        place-self: center;
+        i {
+          display: block;
+        }
+        a {
+          color: #000;
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 9px;
+        }
+      }
+
+      .logo {
+        background: url("/assets/logo.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        max-width: 127px;
+        width: 100%;
+      }
+
+      .search-filled {
+        border: 1px solid #777;
+        border-radius: 3px;
+
+        input {
+          display: inline-block;
+          border: none;
+          width: 91%;
+          padding: 13px;
+        }
+
+        ::placeholder {
+          font-size: 12px;
+        }
+
+        button {
+          background: transparent;
+          border: none;
+        }
+      }
+
+      .flex {
+        display: flex;
+        flex-direction: row;
+        margin-right: 8px;
+        grid-column: 5 / span 2;
+        place-self: end;
+
+        object {
+          width: 1rem;
+          height: 1rem;
+          display: block;
+          margin: 0 auto;
+          margin-bottom: 0.5em;
+        }
+
+        a {
+          margin: 0 10px;
+          margin-top: 0.625em;
+          font-size: 9px;
+          text-transform: uppercase;
+          color: #333;
+          margin-right: 35px;
+        }
+      }
+    }
+  }
+}
+
 // Burger-menu & Search-box Section
 .burger-search-flex {
   display: flex;
@@ -63,6 +154,11 @@ a {
   padding-bottom: 2px;
   padding-left: 10px;
   padding-right: 28px;
+
+  // Media Query 750px
+  @include mediaQuery(46.875em) {
+    display: none;
+  }
 
   div:first-child {
     margin-right: 8px;
@@ -84,6 +180,11 @@ a {
     .search-filled {
       border: 1px solid #777;
       border-radius: 3px;
+
+      // Media Query 500px
+      @include mediaQuery(500px) {
+        width: 75%;
+      }
 
       input {
         display: inline-block;
@@ -115,6 +216,10 @@ a {
   height: 32vh;
   position: relative;
 
+  .video-container {
+    display: none;
+  }
+
   .text-bg {
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -136,6 +241,46 @@ a {
 
     p {
       line-height: 25px;
+    }
+  }
+
+  // Media Query 750px
+  @include mediaQuery(46.875em) {
+    height: 46vh;
+    // .video-container {
+    //   display: block;
+    //   position: relative;
+    //   height: 46vh;
+    //   z-index: 1;
+    // }
+
+    .text-bg {
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+
+      h1 {
+        font-size: 64px;
+        line-height: 1em;
+        margin: 0 20px;
+        padding-bottom: 10px;
+      }
+
+      p {
+        font-size: 22.4px;
+        margin-bottom: 15px;
+      }
+
+      a:first-child {
+        margin-right: 15px;
+      }
+
+      a {
+        color: #fff;
+        padding: 16px;
+        border-radius: 5px;
+        background: #4ac0e0;
+      }
     }
   }
 
@@ -217,8 +362,13 @@ footer {
         padding: 6px;
         font-size: 12px;
         float: left;
-        width: 78%;
+        width: 83%;
         border: 1px solid #414141;
+
+        // Media Query 500px
+        @include mediaQuery(500px) {
+          width: 66%;
+        }
       }
       input:focus {
         border: 1.5px solid #84a5dc;
@@ -234,6 +384,12 @@ footer {
         padding: 3.84px;
         height: 29px;
         cursor: pointer;
+        width: 17%;
+
+        // Media Query 500px
+        @include mediaQuery(500px) {
+          width: 14%;
+        }
       }
     }
 
@@ -377,6 +533,11 @@ footer {
         overflow: hidden;
         padding-left: 55px;
         border: 1px solid #000;
+
+        // Media Query 500px
+        @include mediaQuery(500px) {
+          width: 80%;
+        }
       }
       .select-box::after {
         content: "\25BC";
