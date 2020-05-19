@@ -162,6 +162,127 @@ a {
   }
 }
 
+@media screen and (min-width: 73.75em) {
+  .header-grid-750px {
+    display: none;
+  }
+}
+
+.header-grid-1180px {
+  display: none;
+}
+
+.header-grid-1180px .dropdown-content {
+  display: none;
+}
+
+@media screen and (min-width: 73.75em) {
+  .header-grid-1180px {
+    display: block;
+  }
+  .header-grid-1180px .header-grid-1180px-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 127px 500px 300px 200px 200px;
+        grid-template-columns: 127px 500px 300px 200px 200px;
+  }
+  .header-grid-1180px .logo {
+    background: url("/assets/logo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-width: 127px;
+    width: 100%;
+  }
+  .header-grid-1180px .nav-menu-flex-1180px {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-grid-1180px .nav-menu-flex-1180px a {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 25px;
+  }
+  .header-grid-1180px .nav-menu-flex-1180px a:nth-child(5),
+  .header-grid-1180px .nav-menu-flex-1180px a:nth-child(6) {
+    display: none;
+  }
+  .header-grid-1180px .search-filled-gridItem {
+    -ms-grid-column: 3;
+    grid-column: 3;
+  }
+  .header-grid-1180px .search-filled-gridItem .search-filled {
+    border: 1px solid #777;
+    border-top: none;
+    border-radius: 7px;
+  }
+  .header-grid-1180px .search-filled-gridItem .search-filled input {
+    display: inline-block;
+    border: none;
+    width: 91%;
+    padding: 13px;
+  }
+  .header-grid-1180px .search-filled-gridItem .search-filled ::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .header-grid-1180px .search-filled-gridItem .search-filled :-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .header-grid-1180px .search-filled-gridItem .search-filled ::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .header-grid-1180px .search-filled-gridItem .search-filled ::placeholder {
+    font-size: 12px;
+  }
+  .header-grid-1180px .search-filled-gridItem .search-filled button {
+    background: transparent;
+    border: none;
+  }
+  .header-grid-1180px .lenovopro-dropdown {
+    place-self: center;
+    -ms-grid-column: 4;
+    grid-column: 4;
+  }
+  .header-grid-1180px .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-right: 8px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-column: 5;
+    grid-column: 5;
+  }
+  .header-grid-1180px .flex object {
+    width: 1rem;
+    height: 1rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    margin-right: 35px;
+  }
+}
+
 .burger-search-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -336,6 +457,14 @@ a {
     padding: 16px;
     border-radius: 5px;
     background: #4ac0e0;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+  }
+  .showcase .text-bg a:hover {
+    color: #4ac0e0;
+    padding: 16px;
+    border-radius: 5px;
+    background: #fff;
   }
 }
 
@@ -377,7 +506,7 @@ a {
   height: 119px;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 46.875em) {
   .cards div {
     height: 199px;
     border-top: 1px solid black;
@@ -408,7 +537,7 @@ a {
   width: 100%;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 46.875em) {
   .cards span {
     top: 80%;
     -webkit-transform: translate(-50%, -80%);
@@ -432,7 +561,7 @@ footer .footer-container {
   padding: 0 10px;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 46.875em) {
   footer .footer-container {
     display: -ms-grid;
     display: grid;
@@ -491,7 +620,7 @@ footer .footer-container form button {
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 46.875em) {
   footer .footer-container form button {
     width: 17%;
   }
@@ -509,7 +638,7 @@ footer .footer-container .flex {
   padding-bottom: 10px;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 46.875em) {
   footer .footer-container .flex {
     padding-bottom: 20px;
   }
@@ -599,7 +728,7 @@ footer .footer-container .flex .rss-icon:hover {
   margin-right: 5px;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 46.875em) {
   footer .footer-container .country-region {
     -ms-grid-column-align: end;
         justify-self: end;
@@ -701,12 +830,21 @@ footer .dropdown-flex {
   margin-top: 15px;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 46.875em) {
   footer .dropdown-flex {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 73.75em) {
+  footer .dropdown-flex {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
   }
 }
 
@@ -729,7 +867,7 @@ footer .dropdown-flex .dropdown {
   cursor: pointer;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 46.875em) {
   footer .dropdown-flex .dropdown {
     border-top: none;
   }
@@ -770,10 +908,29 @@ footer .all-rights-reserved-flex {
   padding: 10px 21px 168px;
 }
 
-@media screen and (min-width: 750px) {
+footer .all-rights-reserved-flex p {
+  margin-bottom: 7px;
+}
+
+footer .all-rights-reserved-flex .break {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 0;
+}
+
+@media screen and (min-width: 46.875em) {
   footer .all-rights-reserved-flex {
     border-top: none;
     padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 73.75em) {
+  footer .all-rights-reserved-flex p {
+    margin-right: 10px;
+  }
+  footer .all-rights-reserved-flex .break {
+    display: none;
   }
 }
 
