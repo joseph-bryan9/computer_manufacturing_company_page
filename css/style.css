@@ -183,9 +183,19 @@ a {
   .header-grid-1180px .header-grid-1180px-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 127px 500px 300px 200px 200px;
-        grid-template-columns: 127px 500px 300px 200px 200px;
+    -ms-grid-columns: 127px 500px 1fr 1fr 1fr;
+        grid-template-columns: 127px 500px 1fr 1fr 1fr;
   }
+}
+
+@media screen and (min-width: 73.75em) and (min-width: 1480px) {
+  .header-grid-1180px .header-grid-1180px-grid {
+    -ms-grid-columns: 127px 700px 1fr 1fr 1fr;
+        grid-template-columns: 127px 700px 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 73.75em) {
   .header-grid-1180px .logo {
     background: url("/assets/logo.png");
     background-size: 100%;
@@ -219,6 +229,16 @@ a {
   .header-grid-1180px .nav-menu-flex-1180px a:nth-child(6) {
     display: none;
   }
+}
+
+@media screen and (min-width: 73.75em) and (min-width: 1480px) {
+  .header-grid-1180px .nav-menu-flex-1180px a:nth-child(5),
+  .header-grid-1180px .nav-menu-flex-1180px a:nth-child(6) {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 73.75em) {
   .header-grid-1180px .search-filled-gridItem {
     -ms-grid-column: 3;
     grid-column: 3;
@@ -557,17 +577,21 @@ footer {
           flex-direction: column;
 }
 
-footer .footer-container {
-  padding: 0 10px;
+footer .footer-container-750px {
+  display: none;
 }
 
 @media screen and (min-width: 46.875em) {
   footer .footer-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    display: none;
   }
+  footer .footer-container-750px {
+    display: block;
+  }
+}
+
+footer .footer-container {
+  padding: 0 10px;
 }
 
 footer .footer-container h3 {
@@ -587,7 +611,7 @@ footer .footer-container form input {
   padding: 6px;
   font-size: 12px;
   float: left;
-  width: 83%;
+  width: 82%;
   border: 1px solid #414141;
 }
 
@@ -620,12 +644,6 @@ footer .footer-container form button {
   }
 }
 
-@media screen and (min-width: 46.875em) {
-  footer .footer-container form button {
-    width: 17%;
-  }
-}
-
 footer .footer-container .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -636,12 +654,6 @@ footer .footer-container .flex {
           flex-direction: row;
   padding-top: 16px;
   padding-bottom: 10px;
-}
-
-@media screen and (min-width: 46.875em) {
-  footer .footer-container .flex {
-    padding-bottom: 20px;
-  }
 }
 
 footer .footer-container .flex .fb-icon {
@@ -728,13 +740,6 @@ footer .footer-container .flex .rss-icon:hover {
   margin-right: 5px;
 }
 
-@media screen and (min-width: 46.875em) {
-  footer .footer-container .country-region {
-    -ms-grid-column-align: end;
-        justify-self: end;
-  }
-}
-
 footer .footer-container .country-region h3 {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -815,6 +820,282 @@ footer .footer-container .country-region .select-box::after {
 }
 
 footer .footer-container .country-region option {
+  width: 100%;
+  background: #fff;
+}
+
+footer .footer-container-750px {
+  padding: 0 10px;
+}
+
+footer .footer-container-750px .footer-container-750px-flex {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+footer .footer-container-750px .footer-container-750px-flex div:first-child {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 /2;
+}
+
+footer .footer-container-750px .footer-container-750px-flex div:nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 /3;
+}
+
+footer .footer-container-750px .footer-container-750px-flex h3 {
+  text-transform: uppercase;
+  font-size: 12.8px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+footer .footer-container-750px .footer-container-750px-flex form {
+  margin-bottom: 30px;
+}
+
+footer .footer-container-750px .footer-container-750px-flex form input {
+  padding: 6px;
+  font-size: 12px;
+  float: left;
+  width: 83%;
+  border: 1px solid #414141;
+}
+
+@media screen and (min-width: 500px) {
+  footer .footer-container-750px .footer-container-750px-flex form input {
+    width: 66%;
+  }
+}
+
+footer .footer-container-750px .footer-container-750px-flex form input:focus {
+  border: 1.5px solid #84a5dc;
+}
+
+footer .footer-container-750px .footer-container-750px-flex form button {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  background: #414141;
+  border: none;
+  float: left;
+  padding: 3.84px;
+  height: 29px;
+  cursor: pointer;
+  width: 18%;
+}
+
+@media screen and (min-width: 500px) {
+  footer .footer-container-750px .footer-container-750px-flex form button {
+    width: 14%;
+  }
+}
+
+@media screen and (min-width: 46.875em) {
+  footer .footer-container-750px .footer-container-750px-flex form button {
+    width: 18%;
+  }
+}
+
+footer .footer-container-750px .footer-container-750px-flex .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 16px;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 46.875em) {
+  footer .footer-container-750px .footer-container-750px-flex .flex {
+    padding-bottom: 20px;
+  }
+}
+
+footer .footer-container-750px .footer-container-750px-flex .flex .fb-icon {
+  background: url("/assets/fb.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .footer-container-750px .footer-container-750px-flex .flex .ig-icon {
+  background: url("/assets/ig.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .footer-container-750px .footer-container-750px-flex .flex .yt-icon {
+  background: url("/assets/yt.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .footer-container-750px .footer-container-750px-flex .flex .twitter-icon {
+  background: url("/assets/twitter.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .footer-container-750px .footer-container-750px-flex .flex .flickr-icon {
+  background: url("/assets/flickr.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .footer-container-750px .footer-container-750px-flex .flex .rss-icon {
+  background: url("/assets/rss.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .footer-container-750px .footer-container-750px-flex .flex .fb-icon:hover {
+  background: url("/assets/fb-a.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .footer-container-750px .footer-container-750px-flex .flex .ig-icon:hover {
+  background: url("/assets/ig-a.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .footer-container-750px .footer-container-750px-flex .flex .yt-icon:hover {
+  background: url("/assets/yt-a.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .footer-container-750px .footer-container-750px-flex .flex .twitter-icon:hover {
+  background: url("/assets/twitter-a.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .footer-container-750px .footer-container-750px-flex .flex .flickr-icon:hover {
+  background: url("/assets/flickr-a.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .footer-container-750px .footer-container-750px-flex .flex .rss-icon:hover {
+  background: url("/assets/rss-a.png") no-repeat center center/contain;
+  height: 33px;
+  width: 33px;
+  margin-right: 5px;
+}
+
+footer .footer-container-750px .footer-container-750px-flex .country-region {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+footer .footer-container-750px .footer-container-750px-flex .country-region h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer .footer-container-750px .footer-container-750px-flex .country-region img {
+  padding: 2px;
+  position: absolute;
+  z-index: 1;
+  height: 32px;
+}
+
+footer .footer-container-750px .footer-container-750px-flex .country-region select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0 !important;
+  background: #888;
+  background-image: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 0.5em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  color: #222;
+}
+
+footer .footer-container-750px .footer-container-750px-flex .country-region select select::-ms-expand {
+  display: none;
+}
+
+footer .footer-container-750px .footer-container-750px-flex .country-region .select-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 33px;
+  padding: 6px;
+  background: #888;
+  overflow: hidden;
+  padding-left: 55px;
+  border: 1px solid #000;
+}
+
+@media screen and (min-width: 500px) {
+  footer .footer-container-750px .footer-container-750px-flex .country-region .select-box {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 46.875em) {
+  footer .footer-container-750px .footer-container-750px-flex .country-region .select-box {
+    width: 100%;
+  }
+}
+
+footer .footer-container-750px .footer-container-750px-flex .country-region .select-box::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 9px 15px;
+  background: #424242;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+  color: #fff;
+  font-size: 12px;
+}
+
+footer .footer-container-750px .footer-container-750px-flex .country-region option {
   width: 100%;
   background: #fff;
 }

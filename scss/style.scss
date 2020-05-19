@@ -145,6 +145,7 @@ a {
     }
   }
 
+  // Media Query for 1180px
   @include mediaQuery(73.75em) {
     display: none;
   }
@@ -157,12 +158,18 @@ a {
     display: none;
   }
 
+  // Media Query for 1180px
   @include mediaQuery(73.75em) {
     display: block;
 
     .header-grid-1180px-grid {
       display: grid;
-      grid-template-columns: 127px 500px 300px 200px 200px;
+      grid-template-columns: 127px 500px 1fr 1fr 1fr;
+
+      // Media Query for 1480px
+      @include mediaQuery(1480px) {
+        grid-template-columns: 127px 700px 1fr 1fr 1fr;
+      }
     }
 
     .logo {
@@ -190,6 +197,11 @@ a {
       a:nth-child(5),
       a:nth-child(6) {
         display: none;
+
+        // Media Query for 1480px
+        @include mediaQuery(1480px) {
+          display: block;
+        }
       }
     }
 
@@ -481,14 +493,23 @@ footer {
   display: flex;
   flex-direction: column;
 
+  .footer-container-750px {
+    display: none;
+  }
+
+  // Media Query for 750px
+  @include mediaQuery(46.875em) {
+    .footer-container {
+      display: none;
+    }
+
+    .footer-container-750px {
+      display: block;
+    }
+  }
+
   .footer-container {
     padding: 0 10px;
-
-    // Media Query 750px
-    @include mediaQuery(46.875em) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
 
     // Email Us
     h3 {
@@ -506,7 +527,7 @@ footer {
         padding: 6px;
         font-size: 12px;
         float: left;
-        width: 83%;
+        width: 82%;
         border: 1px solid #414141;
 
         // Media Query 500px
@@ -536,9 +557,9 @@ footer {
         }
 
         // Media Query 750px
-        @include mediaQuery(46.875em) {
-          width: 17%;
-        }
+        // @include mediaQuery(46.875em) {
+        //   width: 17%;
+        // }
       }
     }
 
@@ -550,9 +571,9 @@ footer {
       padding-bottom: 10px;
 
       // Media Query 750px
-      @include mediaQuery(46.875em) {
-        padding-bottom: 20px;
-      }
+      // @include mediaQuery(46.875em) {
+      //   padding-bottom: 20px;
+      // }
 
       .fb-icon {
         background: url("/assets/fb.png") no-repeat center center/contain;
@@ -643,9 +664,9 @@ footer {
     // Country/Region
     .country-region {
       // Media Query 750px
-      @include mediaQuery(46.875em) {
-        justify-self: end;
-      }
+      // @include mediaQuery(46.875em) {
+      //   justify-self: end;
+      // }
 
       h3 {
         padding-top: 10px;
@@ -720,6 +741,258 @@ footer {
       option {
         width: 100%;
         background: #fff;
+      }
+    }
+  }
+
+  // Footer Container 750px Hidden by default
+  .footer-container-750px {
+    padding: 0 10px;
+
+    .footer-container-750px-flex {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      div:first-child {
+        grid-column: 1 /2;
+      }
+
+      div:nth-child(2) {
+        grid-row: 2 /3;
+      }
+
+      // Email Us
+      h3 {
+        text-transform: uppercase;
+        font-size: 12.8px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+      }
+
+      form {
+        margin-bottom: 30px;
+        input {
+          padding: 6px;
+          font-size: 12px;
+          float: left;
+          width: 83%;
+          border: 1px solid #414141;
+
+          // Media Query 500px
+          @include mediaQuery(500px) {
+            width: 66%;
+          }
+        }
+        input:focus {
+          border: 1.5px solid #84a5dc;
+        }
+
+        button {
+          text-transform: uppercase;
+          font-weight: bold;
+          color: #fff;
+          background: #414141;
+          border: none;
+          float: left;
+          padding: 3.84px;
+          height: 29px;
+          cursor: pointer;
+          width: 18%;
+
+          // Media Query 500px
+          @include mediaQuery(500px) {
+            width: 14%;
+          }
+
+          // Media Query 750px
+          @include mediaQuery(46.875em) {
+            width: 18%;
+          }
+        }
+      }
+
+      // Social Media Icons
+      .flex {
+        display: flex;
+        flex-direction: row;
+        padding-top: 16px;
+        padding-bottom: 10px;
+
+        // Media Query 750px
+        @include mediaQuery(46.875em) {
+          padding-bottom: 20px;
+        }
+
+        .fb-icon {
+          background: url("/assets/fb.png") no-repeat center center/contain;
+          height: 33px;
+          width: 33px;
+          margin-right: 5px;
+        }
+
+        .ig-icon {
+          background: url("/assets/ig.png") no-repeat center center/contain;
+          height: 33px;
+          width: 33px;
+          margin-right: 5px;
+        }
+
+        .yt-icon {
+          background: url("/assets/yt.png") no-repeat center center/contain;
+          height: 33px;
+          width: 33px;
+          margin-right: 5px;
+        }
+
+        .twitter-icon {
+          background: url("/assets/twitter.png") no-repeat center center/contain;
+          height: 33px;
+          width: 33px;
+          margin-right: 5px;
+        }
+
+        .flickr-icon {
+          background: url("/assets/flickr.png") no-repeat center center/contain;
+          height: 33px;
+          width: 33px;
+          margin-right: 5px;
+        }
+
+        .rss-icon {
+          background: url("/assets/rss.png") no-repeat center center/contain;
+          height: 33px;
+          width: 33px;
+          margin-right: 5px;
+        }
+
+        // Social Media Icon while Hover
+        .fb-icon:hover {
+          background: url("/assets/fb-a.png") no-repeat center center/contain;
+          height: 33px;
+          width: 33px;
+          margin-right: 5px;
+        }
+
+        .ig-icon:hover {
+          background: url("/assets/ig-a.png") no-repeat center center/contain;
+          height: 33px;
+          width: 33px;
+          margin-right: 5px;
+        }
+
+        .yt-icon:hover {
+          background: url("/assets/yt-a.png") no-repeat center center/contain;
+          height: 33px;
+          width: 33px;
+          margin-right: 5px;
+        }
+
+        .twitter-icon:hover {
+          background: url("/assets/twitter-a.png") no-repeat center
+            center/contain;
+          height: 33px;
+          width: 33px;
+          margin-right: 5px;
+        }
+
+        .flickr-icon:hover {
+          background: url("/assets/flickr-a.png") no-repeat center
+            center/contain;
+          height: 33px;
+          width: 33px;
+          margin-right: 5px;
+        }
+
+        .rss-icon:hover {
+          background: url("/assets/rss-a.png") no-repeat center center/contain;
+          height: 33px;
+          width: 33px;
+          margin-right: 5px;
+        }
+      }
+
+      // Country/Region
+      .country-region {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        justify-self: end;
+
+        h3 {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+
+        img {
+          padding: 2px;
+          position: absolute;
+          z-index: 1;
+          height: 32px;
+        }
+
+        select {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -ms-appearance: none;
+          appearance: none;
+          outline: 0;
+          box-shadow: none;
+          border: 0 !important;
+          background: #888;
+          background-image: none;
+          flex: 1;
+          padding: 0 0.5em;
+          color: #fff;
+          cursor: pointer;
+          font-size: 12px;
+          font-family: "Open Sans", sans-serif;
+          color: #222;
+
+          select::-ms-expand {
+            display: none;
+          }
+        }
+
+        .select-box {
+          position: relative;
+          display: flex;
+          width: 100%;
+          height: 33px;
+          padding: 6px;
+          background: #888;
+          overflow: hidden;
+          padding-left: 55px;
+          border: 1px solid #000;
+
+          // Media Query 500px
+          @include mediaQuery(500px) {
+            width: 80%;
+          }
+
+          // Media Query 750px
+          @include mediaQuery(46.875em) {
+            width: 100%;
+          }
+        }
+        .select-box::after {
+          content: "\25BC";
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 9px 15px;
+          background: #424242;
+          cursor: pointer;
+          pointer-events: none;
+          transition: 0.25s all ease;
+          color: #fff;
+          font-size: 12px;
+        }
+
+        option {
+          width: 100%;
+          background: #fff;
+        }
       }
     }
   }
