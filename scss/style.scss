@@ -438,6 +438,189 @@ a {
     padding: 8px;
     font-size: 16px;
   }
+
+  // Media Query for 1180px
+  @include mediaQuery(1180px) {
+    display: none;
+  }
+}
+
+// Showcase-1180px Section
+.showcase-1180px {
+  background: url("/assets/world_mobile.png") no-repeat center center/cover;
+  height: 45vh;
+  // position: relative;
+  display: none;
+
+  .showcase-1180px-flex {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .video-container {
+    display: block;
+  }
+
+  .text-bg {
+    background: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    padding: 16px;
+    bottom: 0;
+
+    h1,
+    p {
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 400;
+      padding-bottom: 3px;
+    }
+
+    p {
+      line-height: 25px;
+    }
+  }
+
+  // Media Query 750px
+  @include mediaQuery(46.875em) {
+    height: 46vh;
+    position: relative;
+
+    .video-container {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      video {
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+        height: 445px;
+        object-fit: cover;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .video-container::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .text-bg {
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+
+      h1 {
+        font-size: 64px;
+        line-height: 1em;
+        margin: 0 20px;
+        padding-bottom: 10px;
+      }
+
+      p {
+        font-size: 22.4px;
+        margin-bottom: 15px;
+      }
+
+      a:first-child {
+        margin-right: 15px;
+      }
+
+      a {
+        color: #fff;
+        padding: 16px;
+        border-radius: 5px;
+        background: #4ac0e0;
+        transition: all 200ms ease-in-out;
+      }
+
+      a:hover {
+        color: #4ac0e0;
+        padding: 16px;
+        border-radius: 5px;
+        background: #fff;
+      }
+    }
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  a {
+    color: #46c8e1;
+    text-transform: uppercase;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  // Showcase-cards-1180px Section
+  .showcase-cards-1180px {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    div {
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      text-align: center;
+      position: relative;
+      height: 119px;
+      // Media Query 750px
+      @include mediaQuery(46.875em) {
+        height: 199px;
+        border-top: 1px solid rgba(0, 0, 0, 1);
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    a {
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+    }
+
+    span {
+      position: absolute;
+      font-size: 25.6px;
+      color: #fff;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+
+      // Media Query 750px
+      @include mediaQuery(46.875em) {
+        top: 80%;
+        transform: translate(-50%, -80%);
+      }
+    }
+  }
+
+  // Media Query for 1180px
+  @include mediaQuery(1180px) {
+    display: block;
+  }
 }
 
 // Card Section
@@ -484,6 +667,11 @@ a {
       transform: translate(-50%, -80%);
     }
   }
+
+  // Media Query for 1180px
+  @include mediaQuery(1180px) {
+    display: none;
+  }
 }
 
 // Footer {
@@ -506,6 +694,11 @@ footer {
     .footer-container-750px {
       display: block;
     }
+  }
+
+  // Media Query for 1180px
+  @include mediaQuery(73.75em) {
+    padding: 20px 25px;
   }
 
   .footer-container {
@@ -992,6 +1185,35 @@ footer {
         option {
           width: 100%;
           background: #fff;
+        }
+      }
+
+      // Media Query for 1180px
+      @include mediaQuery(73.75em) {
+        grid-template-columns: repeat(3, 1fr);
+
+        div:first-child {
+          grid-column: 1 /2;
+
+          form input {
+            width: 75%;
+          }
+
+          form input,
+          button {
+            height: 32px;
+          }
+        }
+
+        div:nth-child(2) {
+          grid-column: 2 / 3;
+          grid-row: 1 / 2;
+          padding: 0;
+          align-self: end;
+        }
+
+        .country-region {
+          grid-column: 3 / 4;
         }
       }
     }
