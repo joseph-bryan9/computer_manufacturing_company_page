@@ -164,7 +164,7 @@ a {
 
     .header-grid-1180px-grid {
       display: grid;
-      grid-template-columns: 127px 500px 1fr 1fr 1fr;
+      grid-template-columns: 127px 500px 21% 1fr 1fr;
 
       // Media Query for 1480px
       @include mediaQuery(1480px) {
@@ -385,6 +385,11 @@ a {
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.3);
+
+      // Media Query for 1180px
+      @include mediaQuery(73.75em) {
+        background: none;
+      }
     }
 
     .text-bg {
@@ -607,6 +612,7 @@ a {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      z-index: 1;
       // Media Query 1180px
       @include mediaQuery(73.75em) {
         opacity: 0;
@@ -637,6 +643,7 @@ a {
       top: 50%;
       transform: translate(-50%, -50%);
       width: 100%;
+      z-index: 1;
 
       // Media Query 750px
       @include mediaQuery(46.875em) {
@@ -644,6 +651,31 @@ a {
         transform: translate(-50%, -80%);
       }
     }
+
+    .third-span,
+    .fourth-span {
+      top: 30%;
+      // transform: translate(-50%, -80%);
+    }
+
+    span:after {
+      content: "+";
+      position: absolute;
+      top: 50%;
+      right: 1em;
+      transform: translate(0, -50%);
+    }
+  }
+
+  // Showcase cards overlay
+  .showcase-cards-1180px::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
   }
 
   // Media Query for 1180px
