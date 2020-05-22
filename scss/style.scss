@@ -194,8 +194,62 @@ a {
         margin-right: 25px;
       }
 
-      a:nth-child(5),
-      a:nth-child(6) {
+      .pc-tablets-dropdown,
+      .data-center-dropdown,
+      .smart-devices-dropdown,
+      .services-dropdown,
+      .about-lenovo-dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .pc-tablets-dropdown:hover .nav-menu-content-hidden,
+      .data-center-dropdown:hover .nav-menu-content-hidden,
+      .smart-devices-dropdown:hover .nav-menu-content-hidden,
+      .services-dropdown:hover .nav-menu-content-hidden,
+      .about-lenovo-dropdown:hover .nav-menu-content-hidden {
+        display: block;
+      }
+
+      .nav-menu-content-hidden {
+        display: none;
+      }
+
+      .nav-menu-dropdown-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        background-color: #efefef;
+        min-width: 100%;
+        padding: 20px 16px;
+        z-index: 1;
+        overflow: hidden;
+        top: 20px;
+        div {
+          display: flex;
+          flex-direction: row;
+        }
+        .nav-menu-icon {
+          height: 22.75px;
+          width: 22.75px;
+          margin-right: 0.5em;
+        }
+        a {
+          font-size: 13px;
+          align-self: center;
+          text-transform: capitalize;
+          font-weight: normal;
+          margin-right: 2.5em;
+          color: #373737;
+        }
+        #icon-laptops {
+          stroke: yellow;
+        }
+      }
+
+      .services-dropdown,
+      .about-lenovo-dropdown {
         display: none;
 
         // Media Query for 1480px
