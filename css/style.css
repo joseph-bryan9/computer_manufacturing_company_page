@@ -185,6 +185,7 @@ a {
     display: grid;
     -ms-grid-columns: 127px 500px 21% 1fr 1fr;
         grid-template-columns: 127px 500px 21% 1fr 1fr;
+    position: relative;
   }
 }
 
@@ -230,8 +231,18 @@ a {
   .header-grid-1180px .nav-menu-flex-1180px .smart-devices-dropdown,
   .header-grid-1180px .nav-menu-flex-1180px .services-dropdown,
   .header-grid-1180px .nav-menu-flex-1180px .about-lenovo-dropdown {
-    position: relative;
     display: inline-block;
+  }
+  .header-grid-1180px .nav-menu-flex-1180px .pc-tablets-dropdown button,
+  .header-grid-1180px .nav-menu-flex-1180px .data-center-dropdown button,
+  .header-grid-1180px .nav-menu-flex-1180px .smart-devices-dropdown button,
+  .header-grid-1180px .nav-menu-flex-1180px .services-dropdown button,
+  .header-grid-1180px .nav-menu-flex-1180px .about-lenovo-dropdown button {
+    padding: 16px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #fff;
   }
   .header-grid-1180px .nav-menu-flex-1180px .pc-tablets-dropdown:hover .nav-menu-content-hidden,
   .header-grid-1180px .nav-menu-flex-1180px .data-center-dropdown:hover .nav-menu-content-hidden,
@@ -254,9 +265,10 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    position: absolute;
     background-color: #efefef;
-    min-width: 100%;
+    position: absolute;
+    width: 100%;
+    left: 0px;
     padding: 20px 16px;
     z-index: 1;
     overflow: hidden;
@@ -284,9 +296,6 @@ a {
     font-weight: normal;
     margin-right: 2.5em;
     color: #373737;
-  }
-  .header-grid-1180px .nav-menu-flex-1180px .nav-menu-dropdown-content #icon-laptops {
-    stroke: yellow;
   }
   .header-grid-1180px .nav-menu-flex-1180px .services-dropdown,
   .header-grid-1180px .nav-menu-flex-1180px .about-lenovo-dropdown {

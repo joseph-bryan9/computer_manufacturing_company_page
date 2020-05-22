@@ -165,6 +165,7 @@ a {
     .header-grid-1180px-grid {
       display: grid;
       grid-template-columns: 127px 500px 21% 1fr 1fr;
+      position: relative;
 
       // Media Query for 1480px
       @include mediaQuery(1480px) {
@@ -199,8 +200,15 @@ a {
       .smart-devices-dropdown,
       .services-dropdown,
       .about-lenovo-dropdown {
-        position: relative;
         display: inline-block;
+
+        button {
+          padding: 16px;
+          border: none;
+          text-transform: uppercase;
+          font-weight: bold;
+          background: #fff;
+        }
       }
 
       .pc-tablets-dropdown:hover .nav-menu-content-hidden,
@@ -219,13 +227,14 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        position: absolute;
         background-color: #efefef;
-        min-width: 100%;
+        position: absolute;
+        width: 100%;
+        left: 0px;
         padding: 20px 16px;
         z-index: 1;
         overflow: hidden;
-        top: 20px;
+
         div {
           display: flex;
           flex-direction: row;
@@ -242,9 +251,6 @@ a {
           font-weight: normal;
           margin-right: 2.5em;
           color: #373737;
-        }
-        #icon-laptops {
-          stroke: yellow;
         }
       }
 
