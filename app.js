@@ -10,9 +10,9 @@ var minusImage1,
   resourcesBtn,
   customerSupportBtn,
   svgprimary,
-  svgContent,
-  svgItem,
-  svgSecondary;
+  svgcontent,
+  svgitem,
+  svgsecondary;
 
 aboutLenovoBtn = document.getElementById("aboutLenovoBtn");
 productServiceBtn = document.getElementById("productServiceBtn");
@@ -79,15 +79,16 @@ function customerSupport() {
   }
 }
 
-function svgSecondary() {
-  svgprimary = document.getElementById("test");
-  svgprimary.setAttribute(
-    "data",
-    "assets/nav-bar/pc-tablets/laptops-hover.svg"
-  );
-}
+// function svgSecondary() {
+//   svgprimary = document.getElementById("pc-tablets-1-a");
+//   svgsecondary = document.getElementById("pc-tablets-1-b");
+//   svgprimary.style.display = "none";
+//   svgsecondary.style.display = "block";
+// }
 
-function svgPrimary() {
-  svgprimary = document.getElementById("test");
-  svgprimary.setAttribute("data", "assets/nav-bar/pc-tablets/laptops.svg");
-}
+// function svgPrimary() {
+//   svgprimary = document.getElementById("pc-tablets-1-a");
+//   svgsecondary = document.getElementById("pc-tablets-1-b");
+//   svgsecondary.style.display = "none";
+//   svgprimary.style.display = "block";
+// }

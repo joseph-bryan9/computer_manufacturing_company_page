@@ -291,7 +291,7 @@ a {
     width: 100%;
     left: 0px;
     padding: 20px 16px;
-    z-index: 1;
+    z-index: 2;
     overflow: hidden;
   }
   .header-grid-1180px .nav-menu-flex-1180px .nav-menu-dropdown-content div {
@@ -303,10 +303,17 @@ a {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .header-grid-1180px .nav-menu-flex-1180px .nav-menu-dropdown-content .nav-menu-icon {
+  .header-grid-1180px .nav-menu-flex-1180px .nav-menu-dropdown-content div:hover a {
+    color: #4ac0e0;
+  }
+  .header-grid-1180px .nav-menu-flex-1180px .nav-menu-dropdown-content .nav-menu-icon-primary,
+  .header-grid-1180px .nav-menu-flex-1180px .nav-menu-dropdown-content .nav-menu-icon-secondary {
     height: 22.75px;
     width: 22.75px;
     margin-right: 0.5em;
+  }
+  .header-grid-1180px .nav-menu-flex-1180px .nav-menu-dropdown-content .nav-menu-icon-secondary {
+    display: none;
   }
   .header-grid-1180px .nav-menu-flex-1180px .nav-menu-dropdown-content a {
     font-size: 13px;
@@ -367,6 +374,33 @@ a {
     place-self: center;
     -ms-grid-column: 4;
     grid-column: 4;
+    position: relative;
+    display: inline-block;
+  }
+  .header-grid-1180px .lenovopro-dropdown:hover .lenovopro-dropdown-content {
+    display: block;
+  }
+  .header-grid-1180px .lenovopro-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 205px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.9);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    z-index: 6;
+  }
+  .header-grid-1180px .lenovopro-dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+    font-size: 14px;
+  }
+  .header-grid-1180px .lenovopro-dropdown-content a:first-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   }
   .header-grid-1180px .flex {
     display: -webkit-box;
