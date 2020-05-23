@@ -243,6 +243,27 @@ a {
     text-transform: uppercase;
     font-weight: bold;
     background: #fff;
+    cursor: pointer;
+  }
+  .header-grid-1180px .nav-menu-flex-1180px .pc-tablets-dropdown button:hover,
+  .header-grid-1180px .nav-menu-flex-1180px .data-center-dropdown button:hover,
+  .header-grid-1180px .nav-menu-flex-1180px .smart-devices-dropdown button:hover,
+  .header-grid-1180px .nav-menu-flex-1180px .services-dropdown button:hover,
+  .header-grid-1180px .nav-menu-flex-1180px .about-lenovo-dropdown button:hover {
+    background: #efefef;
+    color: #4ac0e0;
+  }
+  .header-grid-1180px .nav-menu-flex-1180px .phones-btn {
+    padding: 15px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #fff;
+    cursor: pointer;
+  }
+  .header-grid-1180px .nav-menu-flex-1180px .phones-btn:hover {
+    background: #efefef;
+    color: #4ac0e0;
   }
   .header-grid-1180px .nav-menu-flex-1180px .pc-tablets-dropdown:hover .nav-menu-content-hidden,
   .header-grid-1180px .nav-menu-flex-1180px .data-center-dropdown:hover .nav-menu-content-hidden,
@@ -958,6 +979,12 @@ footer .footer-container-750px {
   }
 }
 
+@media screen and (min-width: 120em) {
+  footer {
+    padding: 20px 120px;
+  }
+}
+
 footer .footer-container {
   padding: 0 10px;
 }
@@ -1470,8 +1497,8 @@ footer .footer-container-750px .footer-container-750px-flex .country-region opti
 
 @media screen and (min-width: 73.75em) {
   footer .footer-container-750px .footer-container-750px-flex {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: 365px 365px 1fr;
+        grid-template-columns: 365px 365px 1fr;
   }
   footer .footer-container-750px .footer-container-750px-flex div:first-child {
     -ms-grid-column: 1;
@@ -1528,8 +1555,8 @@ footer .dropdown-flex {
   footer .dropdown-flex {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-columns: (16%)[5];
+        grid-template-columns: repeat(5, 16%);
   }
 }
 

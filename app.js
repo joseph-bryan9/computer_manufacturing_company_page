@@ -8,7 +8,11 @@ var minusImage1,
   productServiceBtn,
   shopIndustryBtn,
   resourcesBtn,
-  customerSupportBtn;
+  customerSupportBtn,
+  svgprimary,
+  svgContent,
+  svgItem,
+  svgSecondary;
 
 aboutLenovoBtn = document.getElementById("aboutLenovoBtn");
 productServiceBtn = document.getElementById("productServiceBtn");
@@ -73,4 +77,17 @@ function customerSupport() {
     minusImage5 = document.getElementById("plus5").src = "/assets/plus.png";
     customerSupportBtn.style.display = "none";
   }
+}
+
+function svgSecondary() {
+  svgprimary = document.getElementById("test");
+  svgprimary.setAttribute(
+    "data",
+    "assets/nav-bar/pc-tablets/laptops-hover.svg"
+  );
+}
+
+function svgPrimary() {
+  svgprimary = document.getElementById("test");
+  svgprimary.setAttribute("data", "assets/nav-bar/pc-tablets/laptops.svg");
 }

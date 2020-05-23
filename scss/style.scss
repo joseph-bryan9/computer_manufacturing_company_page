@@ -208,7 +208,26 @@ a {
           text-transform: uppercase;
           font-weight: bold;
           background: #fff;
+          cursor: pointer;
         }
+        button:hover {
+          background: #efefef;
+          color: #4ac0e0;
+        }
+      }
+
+      .phones-btn {
+        padding: 15px;
+        border: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        background: #fff;
+        cursor: pointer;
+      }
+
+      .phones-btn:hover {
+        background: #efefef;
+        color: #4ac0e0;
       }
 
       .pc-tablets-dropdown:hover .nav-menu-content-hidden,
@@ -841,6 +860,11 @@ footer {
     padding: 20px 25px;
   }
 
+  // Media Query for 1920px
+  @include mediaQuery(120em) {
+    padding: 20px 120px;
+  }
+
   .footer-container {
     padding: 0 10px;
 
@@ -1330,7 +1354,7 @@ footer {
 
       // Media Query for 1180px
       @include mediaQuery(73.75em) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 365px 365px 1fr;
 
         div:first-child {
           grid-column: 1 /2;
@@ -1374,7 +1398,7 @@ footer {
     // Media Query 1180px
     @include mediaQuery(73.75em) {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(5, 16%);
     }
 
     img {
