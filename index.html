@@ -217,7 +217,7 @@
                       data="assets/nav-bar/pc-tablets/memorial-day-hover.svg"
                       type="image/svg+xml"
                     ></object>
-                    <a href="#">memorial day</a>
+                    <a href="#" class="memorial-day">memorial day</a>
                   </div>
                 </div>
               </div>
@@ -539,8 +539,12 @@
           <div class="lenovopro-dropdown">
             <a href="#"><img src="assets/lenovo_pro.PNG" alt="" /></a>
             <div class="lenovopro-dropdown-content">
-              <a href="#">sign in to lenovoPRO</a>
-              <a href="#">Learn more</a>
+              <a href="#" class="with-chevron-icon"
+                >sign in to lenovoPRO <i class="fas fa-chevron-right"></i
+              ></a>
+              <a href="#" class="with-chevron-icon"
+                >Learn more <i class="fas fa-chevron-right"></i
+              ></a>
             </div>
           </div>
           <!-- Icons Dropdown -->
@@ -553,24 +557,26 @@
                   type="image/svg+xml"
                 ></object>
               </a>
-              <div class="dropdown-content">
+              <div class="contact-dropdown-content">
                 <div>
-                  <p>help placing an order</p>
+                  <p class="place-order">help placing an order</p>
                   <p>1-855-253-6686 option #2</p>
                 </div>
                 <div>
-                  <p>business order help</p>
-                  <a href="#">866-426-0911</a>
+                  <p class="business-order">business order help</p>
+                  <a href="#" class="business-order-no">866-426-0911</a>
                 </div>
                 <div>
-                  <p>existing order help</p>
-                  <a href="#">855-253-6686 option #1</a>
+                  <p class="existing-order">existing order help</p>
+                  <a href="#" class="existing-order-no"
+                    >855-253-6686 option #1</a
+                  >
                 </div>
                 <div>
-                  <a href="#" class="faqs">faqs & hours<i></i></a>
+                  <a href="#" class="faqs">faqs & hours ><i></i></a>
                 </div>
                 <div>
-                  <a href="#" class="chat">chat now<i></i></a>
+                  <a href="#" class="chat">chat now ><i></i></a>
                 </div>
               </div>
             </div>
@@ -579,10 +585,16 @@
               <a href="#"
                 ><object data="assets/account.svg" type="image/svg+xml"></object
               ></a>
-              <div class="dropdown-content">
-                <a href="#">Sign in</a>
-                <a href="#">orders</a>
-                <a href="#">Product registration</a>
+              <div class="account-dropdown-content">
+                <a href="#" class="with-chevron-icon"
+                  >Sign in <i class="fas fa-chevron-right"></i
+                ></a>
+                <a href="#" class="with-chevron-icon"
+                  >orders <i class="fas fa-chevron-right"></i
+                ></a>
+                <a href="#" class="with-chevron-icon"
+                  >Product registration <i class="fas fa-chevron-right"></i
+                ></a>
               </div>
             </div>
             <!-- Cart Btn -->
@@ -595,8 +607,366 @@
 
       <!-- Burger-menu & Search-box Section -->
       <section class="burger-search-flex">
-        <div>
+        <div class="burger-dropdown" onclick="showBurgerMenu()">
           <a href="#"><i class="fas fa-bars fa-3x"></i>explore</a>
+          <div class="burger-dropdown-content">
+            <!-- PC & Tablets Dropdown -->
+            <div class="pc-tablets-dropdown">
+              <a href="#">pc & tablets</a>
+              <div class="nav-menu-content-hidden">
+                <div class="nav-menu-dropdown-content">
+                  <div>
+                    <object
+                      id="pc-tablets-1-a"
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/pc-tablets/pc-tablets.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">pc & tablets</a>
+                  </div>
+                  <div>
+                    <object
+                      id="pc-tablets-1-a"
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/pc-tablets/laptops.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">laptops</a>
+                  </div>
+                  <div>
+                    <object
+                      id="pc-tablets-2-a"
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/pc-tablets/desktops.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">desktops</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/pc-tablets/workstations.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">workstations</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/pc-tablets/tablets.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">tablets</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/pc-tablets/accessories.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">accessories & software</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/pc-tablets/monitors.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">monitors</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/pc-tablets/gaming.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">gaming</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/pc-tablets/business.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">business</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/pc-tablets/support.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">support</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/pc-tablets/memorial-day.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#" class="memorial-day">memorial day</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="phones-btn"><a href="#">phones</a></div>
+            <!-- Data Center Dropdown -->
+            <div class="data-center-dropdown">
+              <a href="#">data center</a>
+              <div class="nav-menu-content-hidden">
+                <div class="nav-menu-dropdown-content">
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/data-center/data-center.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">data center</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/data-center/solutions.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">solutions</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/data-center/servers.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">servers</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/data-center/storage.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">storage</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/data-center/networking.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">networking</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/data-center/sdi.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">software-defined infrastructure</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/data-center/services.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">services</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/data-center/software.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">software</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/data-center/support.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">support</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Smart Devices Dropdown -->
+            <div class="smart-devices-dropdown">
+              <a href="#">smart devices</a>
+              <div class="nav-menu-content-hidden">
+                <div class="nav-menu-dropdown-content">
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/smart-devices/smart-devices.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">smart devices</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/smart-devices/smart-home.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">smart home</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/smart-devices/smart-office.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">smart office</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/smart-devices/ar-vr.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">ar/vr</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/smart-devices/support.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">support</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Services Dropdown -->
+            <div class="services-dropdown">
+              <a href="#">services</a>
+              <div class="nav-menu-content-hidden">
+                <div class="nav-menu-dropdown-content">
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/services/services.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">services</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/services/warranty.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">warranty lookup</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/services/pc-services.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">PC services</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/services/data-center.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">data center services</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/services/support.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">support</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- About lenovo Dropdown -->
+            <div class="about-lenovo-dropdown">
+              <a href="#">about lenovo</a>
+              <div class="nav-menu-content-hidden">
+                <div class="nav-menu-dropdown-content">
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/about-lenovo/about-lenovo.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">about lenovo</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/about-lenovo/diversity.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">diversity</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/about-lenovo/investor-relations.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">investors relations</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/about-lenovo/story-hub.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">story hub</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/about-lenovo/careers.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">careers</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/about-lenovo/sustainability.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">sustainability</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Lenovo Pro Dropdown -->
+            <div class="lenovopro-dropdown">
+              <a href="#"
+                ><object
+                  data="assets/lenovo_pro_sv.svg"
+                  type="image/svg+xml"
+                ></object
+              ></a>
+              <div class="nav-menu-content-hidden">
+                <div class="nav-menu-dropdown-content">
+                  <div>
+                    <a href="#">sign in to lenovoPRO</a>
+                  </div>
+                  <div>
+                    <object
+                      class="nav-menu-icon-primary"
+                      data="assets/nav-bar/smart-devices/smart-home.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <a href="#">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div>
           <form class="search-filled" action="#">

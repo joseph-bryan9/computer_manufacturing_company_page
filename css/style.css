@@ -306,6 +306,9 @@ a {
   .header-grid-1180px .nav-menu-flex-1180px .nav-menu-dropdown-content div:hover a {
     color: #4ac0e0;
   }
+  .header-grid-1180px .nav-menu-flex-1180px .nav-menu-dropdown-content div:hover .memorial-day {
+    color: #ff0000 !important;
+  }
   .header-grid-1180px .nav-menu-flex-1180px .nav-menu-dropdown-content .nav-menu-icon-primary,
   .header-grid-1180px .nav-menu-flex-1180px .nav-menu-dropdown-content .nav-menu-icon-secondary {
     height: 22.75px;
@@ -314,6 +317,12 @@ a {
   }
   .header-grid-1180px .nav-menu-flex-1180px .nav-menu-dropdown-content .nav-menu-icon-secondary {
     display: none;
+  }
+  .header-grid-1180px .nav-menu-flex-1180px .nav-menu-dropdown-content div:hover .nav-menu-icon-primary {
+    display: none;
+  }
+  .header-grid-1180px .nav-menu-flex-1180px .nav-menu-dropdown-content div:hover .nav-menu-icon-secondary {
+    display: block;
   }
   .header-grid-1180px .nav-menu-flex-1180px .nav-menu-dropdown-content a {
     font-size: 13px;
@@ -324,6 +333,9 @@ a {
     font-weight: normal;
     margin-right: 2.5em;
     color: #373737;
+  }
+  .header-grid-1180px .nav-menu-flex-1180px .nav-menu-dropdown-content .memorial-day {
+    color: #ff0000;
   }
   .header-grid-1180px .nav-menu-flex-1180px .services-dropdown,
   .header-grid-1180px .nav-menu-flex-1180px .about-lenovo-dropdown {
@@ -388,7 +400,7 @@ a {
     padding: 10px;
     -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.9);
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.9);
-    border-radius: 5px;
+    border-radius: 7px;
     z-index: 6;
   }
   .header-grid-1180px .lenovopro-dropdown-content a {
@@ -402,6 +414,19 @@ a {
   .header-grid-1180px .lenovopro-dropdown-content a:first-child {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   }
+  .header-grid-1180px .lenovopro-dropdown-content .fa-chevron-right {
+    display: none;
+  }
+  .header-grid-1180px .lenovopro-dropdown-content .with-chevron-icon:hover {
+    color: #87ceeb;
+    display: inline-block;
+  }
+  .header-grid-1180px .lenovopro-dropdown-content .with-chevron-icon:hover .fa-chevron-right {
+    display: block;
+    color: #87ceeb;
+    display: inline-block;
+    font-size: 12px;
+  }
   .header-grid-1180px .flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -411,14 +436,86 @@ a {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-right: 8px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -ms-grid-column: 5;
     grid-column: 5;
+  }
+  .header-grid-1180px .flex .contact-dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .header-grid-1180px .flex .contact-dropdown:hover .contact-dropdown-content {
+    display: block;
+  }
+  .header-grid-1180px .flex .contact-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 260px;
+    padding: 15px 17.5px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.9);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.9);
+    border-radius: 7px;
+    z-index: 6;
+    right: 0;
+  }
+  .header-grid-1180px .flex .contact-dropdown-content div .business-order-no:hover {
+    color: #87ceeb;
+  }
+  .header-grid-1180px .flex .contact-dropdown-content div .existing-order-no:hover {
+    color: #87ceeb;
+  }
+  .header-grid-1180px .flex .contact-dropdown-content p {
+    text-transform: uppercase;
+    padding: 3px 0;
+    font-size: 13px;
+    color: #333;
+  }
+  .header-grid-1180px .flex .contact-dropdown-content .place-order,
+  .header-grid-1180px .flex .contact-dropdown-content .business-order,
+  .header-grid-1180px .flex .contact-dropdown-content .existing-order {
+    padding: 3px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #333;
+  }
+  .header-grid-1180px .flex .contact-dropdown-content .business-order,
+  .header-grid-1180px .flex .contact-dropdown-content .existing-order {
+    margin-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .header-grid-1180px .flex .contact-dropdown-content .existing-order a {
+    margin-bottom: 10px !important;
+  }
+  .header-grid-1180px .flex .contact-dropdown-content a {
+    padding: 3px 0;
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    font-size: 13px;
+  }
+  .header-grid-1180px .flex .contact-dropdown-content a:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .header-grid-1180px .flex .contact-dropdown-content .faqs,
+  .header-grid-1180px .flex .contact-dropdown-content .chat {
+    color: #217c96;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  .header-grid-1180px .flex .contact-dropdown-content .faqs {
+    margin-top: 8px;
+  }
+  .header-grid-1180px .flex .contact-dropdown-content .chat {
+    color: #217c96;
+    font-weight: bold;
+    padding-bottom: 0px;
   }
   .header-grid-1180px .flex object {
     width: 1rem;
@@ -426,7 +523,52 @@ a {
     display: block;
     margin: 0 auto;
     margin-bottom: 0.5em;
-    margin-right: 35px;
+  }
+  .header-grid-1180px .account-dropdown {
+    place-self: center;
+    -ms-grid-column: 4;
+    grid-column: 4;
+    position: relative;
+    display: inline-block;
+  }
+  .header-grid-1180px .account-dropdown:hover .account-dropdown-content {
+    display: block;
+  }
+  .header-grid-1180px .account-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 205px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.9);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.9);
+    border-radius: 7px;
+    z-index: 6;
+    right: 0;
+  }
+  .header-grid-1180px .account-dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+    font-size: 14px;
+  }
+  .header-grid-1180px .account-dropdown-content a:first-child,
+  .header-grid-1180px .account-dropdown-content a:nth-child(2) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .header-grid-1180px .account-dropdown-content .fa-chevron-right {
+    display: none;
+  }
+  .header-grid-1180px .account-dropdown-content .with-chevron-icon:hover {
+    color: #87ceeb;
+  }
+  .header-grid-1180px .account-dropdown-content .with-chevron-icon:hover .fa-chevron-right {
+    display: block;
+    color: #87ceeb;
+    display: inline-block;
+    font-size: 12px;
   }
 }
 
@@ -508,6 +650,83 @@ a {
 .burger-search-flex div:last-child .search-filled button {
   background: transparent;
   border: none;
+}
+
+.burger-search-flex .burger-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.burger-search-flex .burger-dropdown .burger-dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #000;
+  min-width: 96.8vw;
+  left: -10px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 1px;
+  z-index: 1;
+}
+
+.burger-search-flex .burger-dropdown .burger-dropdown-content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid #fff;
+}
+
+.burger-search-flex .burger-dropdown .burger-dropdown-content .pc-tablets-dropdown {
+  margin-right: 0;
+}
+
+.burger-search-flex .burger-dropdown .burger-dropdown-content .lenovopro-dropdown {
+  background: #666;
+}
+
+.burger-search-flex .burger-dropdown .burger-dropdown-content .nav-menu-content-hidden {
+  display: none;
+}
+
+.burger-search-flex .burger-dropdown .burger-dropdown-content .nav-menu-content-hidden .nav-menu-dropdown-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.burger-search-flex .burger-dropdown .burger-dropdown-content .nav-menu-content-hidden .nav-menu-dropdown-content div:hover .memorial-day {
+  color: #ff0000 !important;
+}
+
+.burger-search-flex .burger-dropdown .burger-dropdown-content .nav-menu-content-hidden .nav-menu-dropdown-content .memorial-day {
+  color: #ff0000;
+}
+
+.burger-search-flex .burger-dropdown .burger-dropdown-content .nav-menu-content-hidden .nav-menu-dropdown-content .nav-menu-icon-primary,
+.burger-search-flex .burger-dropdown .burger-dropdown-content .nav-menu-content-hidden .nav-menu-dropdown-content .nav-menu-icon-secondary {
+  height: 22.75px;
+  width: 22.75px;
+  margin-right: 0.5em;
+}
+
+.burger-search-flex .burger-dropdown .burger-dropdown-content a,
+.burger-search-flex .burger-dropdown .burger-dropdown-content button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 17px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #fff;
 }
 
 .sticky-nav-menu {
