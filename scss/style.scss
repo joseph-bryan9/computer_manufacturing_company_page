@@ -142,6 +142,135 @@ a {
           margin-right: 35px;
         }
       }
+      .burger-dropdown {
+        position: relative;
+        display: inline-block;
+        .burger-dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #000;
+          min-width: 96.4vw;
+          left: -13px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          margin-top: 11px;
+          z-index: 2;
+
+          // Media Query 750px
+          @include mediaQuery(46.875em) {
+            min-width: 48.2vw;
+            display: none;
+          }
+
+          div {
+            // display: flex;
+            // flex-direction: row;
+            border-bottom: 1px solid #fff;
+            cursor: pointer;
+            margin: 0;
+          }
+
+          .flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 0;
+            margin-left: 0;
+            a {
+              margin: 0;
+            }
+          }
+
+          .fa-plus,
+          .fa-minus,
+          .fa-chevron-right {
+            color: #fff;
+            margin-right: 15px;
+          }
+
+          .fa-minus {
+            display: none;
+          }
+
+          .pc-tablets-dropdown {
+            margin-right: 0;
+            margin-left: 0;
+          }
+
+          .lenovopro-dropdown {
+            border-bottom: none;
+            background: #666;
+            a {
+              padding: 0 17px;
+            }
+            object {
+              width: 100px;
+              height: 48px;
+            }
+          }
+
+          .nav-menu-content-hidden {
+            display: none;
+            .nav-menu-dropdown-content {
+              display: flex;
+              flex-direction: column;
+              background: #fff;
+
+              div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                border-bottom: 1px solid #000;
+                padding-left: 20px;
+              }
+              .uppercase {
+                text-transform: uppercase;
+              }
+              a {
+                font-size: 14.6px;
+                font-weight: bold;
+                padding: 17px;
+                padding-left: 5px;
+                align-self: flex-start;
+                text-align: left;
+                text-transform: capitalize;
+                font-weight: normal;
+                color: rgba(0, 0, 0, 0.7);
+                padding-right: auto;
+                flex-grow: 2;
+              }
+              .fa-chevron-right {
+                color: rgba(0, 0, 0, 0.7);
+                margin-right: 10px;
+              }
+
+              div:hover .memorial-day {
+                color: #ff0000 !important;
+              }
+              .memorial-day {
+                color: #ff0000;
+              }
+              .nav-menu-icon-primary,
+              .nav-menu-icon-secondary {
+                height: 22.75px;
+                width: 22.75px;
+                margin-right: 0.5em;
+              }
+            }
+          }
+          a,
+          button {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 17px;
+            align-self: flex-start;
+            text-transform: uppercase;
+            font-weight: normal;
+            color: #fff;
+          }
+        }
+      }
     }
   }
 
@@ -576,7 +705,7 @@ a {
     position: relative;
     display: inline-block;
     .burger-dropdown-content {
-      display: block;
+      display: none;
       position: absolute;
       background-color: #000;
       min-width: 96.4vw;
@@ -584,6 +713,12 @@ a {
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       margin-top: 1px;
       z-index: 2;
+
+      // Media Query 750px
+      @include mediaQuery(46.875em) {
+        min-width: 48.2vw;
+        display: block !important;
+      }
 
       div {
         display: flex;
@@ -597,12 +732,14 @@ a {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin-right: 0;
       }
 
       .fa-plus,
       .fa-minus,
       .fa-chevron-right {
         color: #fff;
+        margin-right: 10px;
       }
 
       .fa-minus {
@@ -614,6 +751,7 @@ a {
       }
 
       .lenovopro-dropdown {
+        border-bottom: none;
         background: #666;
         a {
           padding: 0 17px;
@@ -625,7 +763,7 @@ a {
       }
 
       .nav-menu-content-hidden {
-        display: block;
+        display: none;
         .nav-menu-dropdown-content {
           display: flex;
           flex-direction: column;
@@ -729,7 +867,7 @@ a {
 
   // Media Query 750px
   @include mediaQuery(46.875em) {
-    height: 46vh;
+    height: 482.5px;
     position: relative;
 
     .video-container {
@@ -743,7 +881,9 @@ a {
         position: absolute;
         min-width: 100%;
         min-height: 100%;
-        height: 445px;
+        // height: 445px;
+        width: auto;
+        height: auto;
         object-fit: cover;
         top: 50%;
         left: 50%;
