@@ -45,17 +45,20 @@
       <!-- Header-menu 750px Section -->
       <section class="header-grid-750px">
         <div class="header-grid-750px-grid">
-          <div class="burger-dropdown" onclick="showBurgerMenu()">
+          <div class="burger-dropdown" onclick="showBurgerMenu2()">
             <a href="#"><i class="fas fa-bars fa-3x"></i>explore</a>
-            <div class="burger-dropdown-content">
+            <div
+              id="id-burger-dropdown-content-2"
+              class="burger-dropdown-content"
+            >
               <!-- PC & Tablets Dropdown -->
               <div class="pc-tablets-dropdown">
-                <div class="flex">
+                <div class="flex" onclick="showSubMenu1a()">
                   <a href="#">pc & tablets</a>
-                  <i class="fas fa-plus fa-xs"></i>
-                  <i class="fas fa-minus fa-xs"></i>
+                  <i id="plus1-a" class="fas fa-plus fa-xs"></i>
+                  <i id="minus1-a" class="fas fa-minus fa-xs"></i>
                 </div>
-                <div class="nav-menu-content-hidden">
+                <div id="hidden-menu1-a" class="nav-menu-content-hidden">
                   <div class="nav-menu-dropdown-content">
                     <div>
                       <object
@@ -170,12 +173,12 @@
               </div>
               <!-- Data Center Dropdown -->
               <div class="data-center-dropdown">
-                <div class="flex">
+                <div class="flex" onclick="showSubMenu2a()">
                   <a href="#">data center</a>
-                  <i class="fas fa-plus fa-xs"></i>
-                  <i class="fas fa-minus fa-xs"></i>
+                  <i id="plus2-a" class="fas fa-plus fa-xs"></i>
+                  <i id="minus2-a" class="fas fa-minus fa-xs"></i>
                 </div>
-                <div class="nav-menu-content-hidden">
+                <div id="hidden-menu2-a" class="nav-menu-content-hidden">
                   <div class="nav-menu-dropdown-content">
                     <div>
                       <object
@@ -263,12 +266,12 @@
               </div>
               <!-- Smart Devices Dropdown -->
               <div class="smart-devices-dropdown">
-                <div class="flex">
+                <div class="flex" onclick="showSubMenu3a()">
                   <a href="#">smart devices</a>
-                  <i class="fas fa-plus fa-xs"></i>
-                  <i class="fas fa-minus fa-xs"></i>
+                  <i id="plus3-a" class="fas fa-plus fa-xs"></i>
+                  <i id="minus3-a" class="fas fa-minus fa-xs"></i>
                 </div>
-                <div class="nav-menu-content-hidden">
+                <div id="hidden-menu3-a" class="nav-menu-content-hidden">
                   <div class="nav-menu-dropdown-content">
                     <div>
                       <object
@@ -320,12 +323,12 @@
               </div>
               <!-- Services Dropdown -->
               <div class="services-dropdown">
-                <div class="flex">
+                <div class="flex" onclick="showSubMenu4a()">
                   <a href="#">services</a>
-                  <i class="fas fa-plus fa-xs"></i>
-                  <i class="fas fa-minus fa-xs"></i>
+                  <i id="plus4-a" class="fas fa-plus fa-xs"></i>
+                  <i id="minus4-a" class="fas fa-minus fa-xs"></i>
                 </div>
-                <div class="nav-menu-content-hidden">
+                <div id="hidden-menu4-a" class="nav-menu-content-hidden">
                   <div class="nav-menu-dropdown-content">
                     <div>
                       <object
@@ -377,12 +380,12 @@
               </div>
               <!-- About lenovo Dropdown -->
               <div class="about-lenovo-dropdown">
-                <div class="flex">
+                <div class="flex" onclick="showSubMenu5a()">
                   <a href="#">about lenovo</a>
-                  <i class="fas fa-plus fa-xs"></i>
-                  <i class="fas fa-minus fa-xs"></i>
+                  <i id="plus5-a" class="fas fa-plus fa-xs"></i>
+                  <i id="minus5-a" class="fas fa-minus fa-xs"></i>
                 </div>
-                <div class="nav-menu-content-hidden">
+                <div id="hidden-menu5-a" class="nav-menu-content-hidden">
                   <div class="nav-menu-dropdown-content">
                     <div>
                       <object
@@ -443,17 +446,17 @@
               </div>
               <!-- Lenovo Pro Dropdown -->
               <div class="lenovopro-dropdown">
-                <div class="flex">
+                <div class="flex" onclick="showSubMenu6a()">
                   <a href="#"
                     ><object
                       data="assets/lenovo_pro_sv.svg"
                       type="image/svg+xml"
                     ></object
                   ></a>
-                  <i class="fas fa-plus fa-xs"></i>
-                  <i class="fas fa-minus fa-xs"></i>
+                  <i id="plus6-a" class="fas fa-plus fa-xs"></i>
+                  <i id="minus6-a" class="fas fa-minus fa-xs"></i>
                 </div>
-                <div class="nav-menu-content-hidden">
+                <div id="hidden-menu6-a" class="nav-menu-content-hidden">
                   <div class="nav-menu-dropdown-content">
                     <div>
                       <a href="#">sign in to lenovoPRO</a>
@@ -1034,15 +1037,15 @@
       <section class="burger-search-flex">
         <div class="burger-dropdown" onclick="showBurgerMenu()">
           <a href="#"><i class="fas fa-bars fa-3x"></i>explore</a>
-          <div class="burger-dropdown-content">
+          <div id="id-burger-dropdown-content" class="burger-dropdown-content">
             <!-- PC & Tablets Dropdown -->
             <div class="pc-tablets-dropdown">
-              <div class="flex">
+              <div class="flex" onclick="showSubMenu()">
                 <a href="#">pc & tablets</a>
-                <i class="fas fa-plus fa-xs"></i>
-                <i class="fas fa-minus fa-xs"></i>
+                <i id="plus" class="fas fa-plus fa-xs"></i>
+                <i id="minus" class="fas fa-minus fa-xs"></i>
               </div>
-              <div class="nav-menu-content-hidden">
+              <div id="hidden-menu1" class="nav-menu-content-hidden">
                 <div class="nav-menu-dropdown-content">
                   <div>
                     <object
@@ -1156,12 +1159,12 @@
             </div>
             <!-- Data Center Dropdown -->
             <div class="data-center-dropdown">
-              <div class="flex">
+              <div class="flex" onclick="showSubMenu2()">
                 <a href="#">data center</a>
-                <i class="fas fa-plus fa-xs"></i>
-                <i class="fas fa-minus fa-xs"></i>
+                <i id="plus2" class="fas fa-plus fa-xs"></i>
+                <i id="minus2" class="fas fa-minus fa-xs"></i>
               </div>
-              <div class="nav-menu-content-hidden">
+              <div id="hidden-menu2" class="nav-menu-content-hidden">
                 <div class="nav-menu-dropdown-content">
                   <div>
                     <object
@@ -1249,12 +1252,12 @@
             </div>
             <!-- Smart Devices Dropdown -->
             <div class="smart-devices-dropdown">
-              <div class="flex">
+              <div class="flex" onclick="showSubMenu3()">
                 <a href="#">smart devices</a>
-                <i class="fas fa-plus fa-xs"></i>
-                <i class="fas fa-minus fa-xs"></i>
+                <i id="plus3" class="fas fa-plus fa-xs"></i>
+                <i id="minus3" class="fas fa-minus fa-xs"></i>
               </div>
-              <div class="nav-menu-content-hidden">
+              <div id="hidden-menu3" class="nav-menu-content-hidden">
                 <div class="nav-menu-dropdown-content">
                   <div>
                     <object
@@ -1306,12 +1309,12 @@
             </div>
             <!-- Services Dropdown -->
             <div class="services-dropdown">
-              <div class="flex">
+              <div class="flex" onclick="showSubMenu4()">
                 <a href="#">services</a>
-                <i class="fas fa-plus fa-xs"></i>
-                <i class="fas fa-minus fa-xs"></i>
+                <i id="plus4" class="fas fa-plus fa-xs"></i>
+                <i id="minus4" class="fas fa-minus fa-xs"></i>
               </div>
-              <div class="nav-menu-content-hidden">
+              <div id="hidden-menu4" class="nav-menu-content-hidden">
                 <div class="nav-menu-dropdown-content">
                   <div>
                     <object
@@ -1363,12 +1366,12 @@
             </div>
             <!-- About lenovo Dropdown -->
             <div class="about-lenovo-dropdown">
-              <div class="flex">
+              <div class="flex" onclick="showSubMenu5()">
                 <a href="#">about lenovo</a>
-                <i class="fas fa-plus fa-xs"></i>
-                <i class="fas fa-minus fa-xs"></i>
+                <i id="plus5" class="fas fa-plus fa-xs"></i>
+                <i id="minus5" class="fas fa-minus fa-xs"></i>
               </div>
-              <div class="nav-menu-content-hidden">
+              <div id="hidden-menu5" class="nav-menu-content-hidden">
                 <div class="nav-menu-dropdown-content">
                   <div>
                     <object
@@ -1429,17 +1432,17 @@
             </div>
             <!-- Lenovo Pro Dropdown -->
             <div class="lenovopro-dropdown">
-              <div class="flex">
+              <div class="flex" onclick="showSubMenu6()">
                 <a href="#"
                   ><object
                     data="assets/lenovo_pro_sv.svg"
                     type="image/svg+xml"
                   ></object
                 ></a>
-                <i class="fas fa-plus fa-xs"></i>
-                <i class="fas fa-minus fa-xs"></i>
+                <i id="plus6" class="fas fa-plus fa-xs"></i>
+                <i id="minus6" class="fas fa-minus fa-xs"></i>
               </div>
-              <div class="nav-menu-content-hidden">
+              <div id="hidden-menu6" class="nav-menu-content-hidden">
                 <div class="nav-menu-dropdown-content">
                   <div>
                     <a href="#">sign in to lenovoPRO</a>

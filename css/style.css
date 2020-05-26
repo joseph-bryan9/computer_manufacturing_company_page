@@ -895,6 +895,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #fff;
+  margin-right: 0;
 }
 
 .burger-search-flex .burger-dropdown .burger-dropdown-content .nav-menu-content-hidden .nav-menu-dropdown-content div {

@@ -1,3 +1,221 @@
+// Burger-menu
+var showMenu;
+
+function showBurgerMenu() {
+  showMenu = document.getElementById("id-burger-dropdown-content");
+
+  if (!showMenu.style.display || showMenu.style.display == "none") {
+    showMenu.style.display = "block";
+  } else {
+    // showMenu.style.display = "none";
+  }
+}
+
+function showBurgerMenu2() {
+  showMenu = document.getElementById("id-burger-dropdown-content-2");
+
+  if (!showMenu.style.display || showMenu.style.display == "none") {
+    showMenu.style.display = "block";
+  } else {
+    // showMenu.style.display = "none";
+  }
+}
+
+// Burger-menu sub-menu
+var navMenuHidden, plus, minus;
+
+function showSubMenu() {
+  navMenuHidden = document.getElementById("hidden-menu1");
+  plus = document.getElementById("plus");
+  minus = document.getElementById("minus");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    navMenuHidden.style.display = "block";
+    plus.style.display = "none";
+    minus.style.display = "block";
+  } else {
+    navMenuHidden.style.display = "none";
+    plus.style.display = "block";
+    minus.style.display = "none";
+  }
+}
+
+function showSubMenu2() {
+  navMenuHidden = document.getElementById("hidden-menu2");
+  plus = document.getElementById("plus2");
+  minus = document.getElementById("minus2");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    navMenuHidden.style.display = "block";
+    plus.style.display = "none";
+    minus.style.display = "block";
+  } else {
+    navMenuHidden.style.display = "none";
+    plus.style.display = "block";
+    minus.style.display = "none";
+  }
+}
+
+function showSubMenu3() {
+  navMenuHidden = document.getElementById("hidden-menu3");
+  plus = document.getElementById("plus3");
+  minus = document.getElementById("minus3");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    navMenuHidden.style.display = "block";
+    plus.style.display = "none";
+    minus.style.display = "block";
+  } else {
+    navMenuHidden.style.display = "none";
+    plus.style.display = "block";
+    minus.style.display = "none";
+  }
+}
+
+function showSubMenu4() {
+  navMenuHidden = document.getElementById("hidden-menu4");
+  plus = document.getElementById("plus4");
+  minus = document.getElementById("minus4");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    navMenuHidden.style.display = "block";
+    plus.style.display = "none";
+    minus.style.display = "block";
+  } else {
+    navMenuHidden.style.display = "none";
+    plus.style.display = "block";
+    minus.style.display = "none";
+  }
+}
+
+function showSubMenu5() {
+  navMenuHidden = document.getElementById("hidden-menu5");
+  plus = document.getElementById("plus5");
+  minus = document.getElementById("minus5");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    navMenuHidden.style.display = "block";
+    plus.style.display = "none";
+    minus.style.display = "block";
+  } else {
+    navMenuHidden.style.display = "none";
+    plus.style.display = "block";
+    minus.style.display = "none";
+  }
+}
+
+function showSubMenu6() {
+  navMenuHidden = document.getElementById("hidden-menu6");
+  plus = document.getElementById("plus6");
+  minus = document.getElementById("minus6");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    navMenuHidden.style.display = "block";
+    plus.style.display = "none";
+    minus.style.display = "block";
+  } else {
+    navMenuHidden.style.display = "none";
+    plus.style.display = "block";
+    minus.style.display = "none";
+  }
+}
+
+function showSubMenu1a() {
+  navMenuHidden = document.getElementById("hidden-menu1-a");
+  plus = document.getElementById("plus1-a");
+  minus = document.getElementById("minus1-a");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    navMenuHidden.style.display = "block";
+    plus.style.display = "none";
+    minus.style.display = "block";
+  } else {
+    navMenuHidden.style.display = "none";
+    plus.style.display = "block";
+    minus.style.display = "none";
+  }
+}
+
+function showSubMenu2a() {
+  navMenuHidden = document.getElementById("hidden-menu2-a");
+  plus = document.getElementById("plus2-a");
+  minus = document.getElementById("minus2-a");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    navMenuHidden.style.display = "block";
+    plus.style.display = "none";
+    minus.style.display = "block";
+  } else {
+    navMenuHidden.style.display = "none";
+    plus.style.display = "block";
+    minus.style.display = "none";
+  }
+}
+
+function showSubMenu3a() {
+  navMenuHidden = document.getElementById("hidden-menu3-a");
+  plus = document.getElementById("plus3-a");
+  minus = document.getElementById("minus3-a");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    navMenuHidden.style.display = "block";
+    plus.style.display = "none";
+    minus.style.display = "block";
+  } else {
+    navMenuHidden.style.display = "none";
+    plus.style.display = "block";
+    minus.style.display = "none";
+  }
+}
+
+function showSubMenu4a() {
+  navMenuHidden = document.getElementById("hidden-menu4-a");
+  plus = document.getElementById("plus4-a");
+  minus = document.getElementById("minus4-a");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    navMenuHidden.style.display = "block";
+    plus.style.display = "none";
+    minus.style.display = "block";
+  } else {
+    navMenuHidden.style.display = "none";
+    plus.style.display = "block";
+    minus.style.display = "none";
+  }
+}
+
+function showSubMenu5a() {
+  navMenuHidden = document.getElementById("hidden-menu5-a");
+  plus = document.getElementById("plus5-a");
+  minus = document.getElementById("minus5-a");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    navMenuHidden.style.display = "block";
+    plus.style.display = "none";
+    minus.style.display = "block";
+  } else {
+    navMenuHidden.style.display = "none";
+    plus.style.display = "block";
+    minus.style.display = "none";
+  }
+}
+
+function showSubMenu6a() {
+  navMenuHidden = document.getElementById("hidden-menu6-a");
+  plus = document.getElementById("plus6-a");
+  minus = document.getElementById("minus6-a");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    navMenuHidden.style.display = "block";
+    plus.style.display = "none";
+    minus.style.display = "block";
+  } else {
+    navMenuHidden.style.display = "none";
+    plus.style.display = "block";
+    minus.style.display = "none";
+  }
+}
+
 // About/ Products & Service/ Shop By/ Resources/ Customer Support
 var minusImage1,
   minusImage2,
@@ -78,17 +296,3 @@ function customerSupport() {
     customerSupportBtn.style.display = "none";
   }
 }
-
-// function svgSecondary() {
-//   svgprimary = document.getElementById("pc-tablets-1-a");
-//   svgsecondary = document.getElementById("pc-tablets-1-b");
-//   svgprimary.style.display = "none";
-//   svgsecondary.style.display = "block";
-// }
-
-// function svgPrimary() {
-//   svgprimary = document.getElementById("pc-tablets-1-a");
-//   svgsecondary = document.getElementById("pc-tablets-1-b");
-//   svgsecondary.style.display = "none";
-//   svgprimary.style.display = "block";
-// }
