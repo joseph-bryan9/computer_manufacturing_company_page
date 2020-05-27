@@ -18,32 +18,498 @@
       integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
       crossorigin="anonymous"
     />
+    <link href="hamburgers-master/dist/hamburgers.min.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container">
       <!-- Header-menu Section -->
-      <section class="header-grid">
-        <a href="#" class="logo"></a>
-        <div class="grid">
-          <div class="flex">
-            <a href="#"
-              ><object data="assets/contact.svg" type="image/svg+xml"></object>
-              contact</a
+      <section id="header-menu">
+        <div class="header-grid">
+          <a href="#" class="logo"></a>
+          <div class="grid">
+            <div class="flex">
+              <a href="#"
+                ><object
+                  data="assets/contact.svg"
+                  type="image/svg+xml"
+                ></object>
+                contact</a
+              >
+              <a href="#"
+                ><object data="assets/account.svg" type="image/svg+xml"></object
+                >account</a
+              >
+              <a href="#"
+                ><object data="assets/cart.svg" type="image/svg+xml"></object
+                >cart</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Header-menu-2 Hidden by default -->
+      <section id="header-menu-2">
+        <div class="burger-search-flex">
+          <div class="burger-dropdown" onclick="showBurgerMenu1a()">
+            <a href="#"><i class="fas fa-bars fa-3x"></i>explore</a>
+            <div
+              id="id-burger-dropdown-content-1-a"
+              class="burger-dropdown-content"
             >
-            <a href="#"
-              ><object data="assets/account.svg" type="image/svg+xml"></object
-              >account</a
-            >
-            <a href="#"
-              ><object data="assets/cart.svg" type="image/svg+xml"></object
-              >cart</a
-            >
+              <!-- PC & Tablets Dropdown -->
+              <div class="pc-tablets-dropdown">
+                <div class="flex" onclick="showSubMenu1a()">
+                  <a href="#">pc & tablets</a>
+                  <i id="plus1-a" class="fas fa-plus fa-xs"></i>
+                  <i id="minus1-a" class="fas fa-minus fa-xs"></i>
+                </div>
+                <div id="hidden-menu1-a" class="nav-menu-content-hidden">
+                  <div class="nav-menu-dropdown-content">
+                    <div>
+                      <object
+                        id="pc-tablets-1-a"
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/pc-tablets.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#" class="uppercase">pc & tablets</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        id="pc-tablets-1-a"
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/laptops.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">laptops</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        id="pc-tablets-2-a"
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/desktops.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">desktops</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/workstations.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">workstations</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/tablets.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">tablets</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/accessories.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">accessories & software</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/monitors.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">monitors</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/gaming.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">gaming</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/business.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">business</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/support.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">support</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/memorial-day.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#" class="memorial-day">memorial day</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="phones-btn">
+                <div class="flex">
+                  <a href="#">phones</a
+                  ><i class="fas fa-chevron-right fa-xs"></i>
+                </div>
+              </div>
+              <!-- Data Center Dropdown -->
+              <div class="data-center-dropdown">
+                <div class="flex" onclick="showSubMenu2a()">
+                  <a href="#">data center</a>
+                  <i id="plus2-a" class="fas fa-plus fa-xs"></i>
+                  <i id="minus2-a" class="fas fa-minus fa-xs"></i>
+                </div>
+                <div id="hidden-menu2-a" class="nav-menu-content-hidden">
+                  <div class="nav-menu-dropdown-content">
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/data-center/data-center.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">data center</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/data-center/solutions.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">solutions</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/data-center/servers.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">servers</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/data-center/storage.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">storage</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/data-center/networking.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">networking</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/data-center/sdi.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">software-defined infrastructure</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/data-center/services.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">services</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/data-center/software.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">software</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/data-center/support.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">support</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Smart Devices Dropdown -->
+              <div class="smart-devices-dropdown">
+                <div class="flex" onclick="showSubMenu3a()">
+                  <a href="#">smart devices</a>
+                  <i id="plus3-a" class="fas fa-plus fa-xs"></i>
+                  <i id="minus3-a" class="fas fa-minus fa-xs"></i>
+                </div>
+                <div id="hidden-menu3-a" class="nav-menu-content-hidden">
+                  <div class="nav-menu-dropdown-content">
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/smart-devices/smart-devices.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">smart devices</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/smart-devices/smart-home.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">smart home</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/smart-devices/smart-office.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">smart office</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/smart-devices/ar-vr.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">ar/vr</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/smart-devices/support.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">support</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Services Dropdown -->
+              <div class="services-dropdown">
+                <div class="flex" onclick="showSubMenu4a()">
+                  <a href="#">services</a>
+                  <i id="plus4-a" class="fas fa-plus fa-xs"></i>
+                  <i id="minus4-a" class="fas fa-minus fa-xs"></i>
+                </div>
+                <div id="hidden-menu4-a" class="nav-menu-content-hidden">
+                  <div class="nav-menu-dropdown-content">
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/services/services.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#" class="uppercase">services</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/services/warranty.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">warranty lookup</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/services/pc-services.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">PC services</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/services/data-center.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">data center services</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/services/support.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">support</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- About lenovo Dropdown -->
+              <div class="about-lenovo-dropdown">
+                <div class="flex" onclick="showSubMenu5a()">
+                  <a href="#">about lenovo</a>
+                  <i id="plus5-a" class="fas fa-plus fa-xs"></i>
+                  <i id="minus5-a" class="fas fa-minus fa-xs"></i>
+                </div>
+                <div id="hidden-menu5-a" class="nav-menu-content-hidden">
+                  <div class="nav-menu-dropdown-content">
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/about-lenovo/about-lenovo.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#" class="uppercase">about lenovo</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/about-lenovo/diversity.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">diversity</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/about-lenovo/investor-relations.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">investors relations</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/about-lenovo/story-hub.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">story hub</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/about-lenovo/careers.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">careers</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/about-lenovo/sustainability.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">sustainability</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Lenovo Pro Dropdown -->
+              <div class="lenovopro-dropdown">
+                <div class="flex" onclick="showSubMenu6a()">
+                  <a href="#"
+                    ><object
+                      data="assets/lenovo_pro_sv.svg"
+                      type="image/svg+xml"
+                    ></object
+                  ></a>
+                  <i id="plus6-a" class="fas fa-plus fa-xs"></i>
+                  <i id="minus6-a" class="fas fa-minus fa-xs"></i>
+                </div>
+                <div id="hidden-menu6-a" class="nav-menu-content-hidden">
+                  <div class="nav-menu-dropdown-content">
+                    <div>
+                      <a href="#">sign in to lenovoPRO</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/smart-devices/smart-home.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">Learn more</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="flex">
+              <a href="#"
+                ><object data="assets/search.svg" type="image/svg+xml"></object>
+                search</a
+              >
+              <a href="#"
+                ><object
+                  data="assets/contact.svg"
+                  type="image/svg+xml"
+                ></object>
+                contact</a
+              >
+              <a href="#"
+                ><object data="assets/account.svg" type="image/svg+xml"></object
+                >account</a
+              >
+              <a href="#"
+                ><object data="assets/cart.svg" type="image/svg+xml"></object
+                >cart</a
+              >
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Header-menu 750px Section -->
-      <section class="header-grid-750px">
+      <section id="header-menu-3" class="header-grid-750px">
         <div class="header-grid-750px-grid">
           <div class="burger-dropdown" onclick="showBurgerMenu2()">
             <a href="#"><i class="fas fa-bars fa-3x"></i>explore</a>
@@ -970,6 +1436,7 @@
               <a href="#" class="with-chevron-icon"
                 >sign in to lenovoPRO <i class="fas fa-chevron-right"></i
               ></a>
+              <div class="border-bottom"></div>
               <a href="#" class="with-chevron-icon"
                 >Learn more <i class="fas fa-chevron-right"></i
               ></a>
@@ -1034,441 +1501,447 @@
       </section>
 
       <!-- Burger-menu & Search-box Section -->
-      <section class="burger-search-flex">
-        <div class="burger-dropdown" onclick="showBurgerMenu()">
-          <a href="#"><i class="fas fa-bars fa-3x"></i>explore</a>
-          <div id="id-burger-dropdown-content" class="burger-dropdown-content">
-            <!-- PC & Tablets Dropdown -->
-            <div class="pc-tablets-dropdown">
-              <div class="flex" onclick="showSubMenu()">
-                <a href="#">pc & tablets</a>
-                <i id="plus" class="fas fa-plus fa-xs"></i>
-                <i id="minus" class="fas fa-minus fa-xs"></i>
-              </div>
-              <div id="hidden-menu1" class="nav-menu-content-hidden">
-                <div class="nav-menu-dropdown-content">
-                  <div>
-                    <object
-                      id="pc-tablets-1-a"
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/pc-tablets/pc-tablets.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#" class="uppercase">pc & tablets</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      id="pc-tablets-1-a"
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/pc-tablets/laptops.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">laptops</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      id="pc-tablets-2-a"
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/pc-tablets/desktops.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">desktops</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/pc-tablets/workstations.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">workstations</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/pc-tablets/tablets.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">tablets</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/pc-tablets/accessories.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">accessories & software</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/pc-tablets/monitors.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">monitors</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/pc-tablets/gaming.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">gaming</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/pc-tablets/business.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">business</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/pc-tablets/support.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">support</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/pc-tablets/memorial-day.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#" class="memorial-day">memorial day</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
+      <section id="burger-menu">
+        <div class="burger-search-flex">
+          <div class="burger-dropdown" onclick="showBurgerMenu()">
+            <a href="#"><i class="fas fa-bars fa-3x"></i>explore</a>
+            <div
+              id="id-burger-dropdown-content"
+              class="burger-dropdown-content"
+            >
+              <!-- PC & Tablets Dropdown -->
+              <div class="pc-tablets-dropdown">
+                <div class="flex" onclick="showSubMenu()">
+                  <a href="#">pc & tablets</a>
+                  <i id="plus" class="fas fa-plus fa-xs"></i>
+                  <i id="minus" class="fas fa-minus fa-xs"></i>
+                </div>
+                <div id="hidden-menu1" class="nav-menu-content-hidden">
+                  <div class="nav-menu-dropdown-content">
+                    <div>
+                      <object
+                        id="pc-tablets-1-a"
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/pc-tablets.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#" class="uppercase">pc & tablets</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        id="pc-tablets-1-a"
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/laptops.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">laptops</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        id="pc-tablets-2-a"
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/desktops.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">desktops</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/workstations.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">workstations</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/tablets.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">tablets</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/accessories.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">accessories & software</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/monitors.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">monitors</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/gaming.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">gaming</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/business.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">business</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/support.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">support</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/pc-tablets/memorial-day.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#" class="memorial-day">memorial day</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="phones-btn">
-              <div class="flex">
-                <a href="#">phones</a><i class="fas fa-chevron-right fa-xs"></i>
+              <div class="phones-btn">
+                <div class="flex">
+                  <a href="#">phones</a
+                  ><i class="fas fa-chevron-right fa-xs"></i>
+                </div>
               </div>
-            </div>
-            <!-- Data Center Dropdown -->
-            <div class="data-center-dropdown">
-              <div class="flex" onclick="showSubMenu2()">
-                <a href="#">data center</a>
-                <i id="plus2" class="fas fa-plus fa-xs"></i>
-                <i id="minus2" class="fas fa-minus fa-xs"></i>
-              </div>
-              <div id="hidden-menu2" class="nav-menu-content-hidden">
-                <div class="nav-menu-dropdown-content">
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/data-center/data-center.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">data center</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/data-center/solutions.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">solutions</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/data-center/servers.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">servers</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/data-center/storage.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">storage</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/data-center/networking.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">networking</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/data-center/sdi.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">software-defined infrastructure</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/data-center/services.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">services</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/data-center/software.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">software</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/data-center/support.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">support</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
+              <!-- Data Center Dropdown -->
+              <div class="data-center-dropdown">
+                <div class="flex" onclick="showSubMenu2()">
+                  <a href="#">data center</a>
+                  <i id="plus2" class="fas fa-plus fa-xs"></i>
+                  <i id="minus2" class="fas fa-minus fa-xs"></i>
+                </div>
+                <div id="hidden-menu2" class="nav-menu-content-hidden">
+                  <div class="nav-menu-dropdown-content">
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/data-center/data-center.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">data center</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/data-center/solutions.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">solutions</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/data-center/servers.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">servers</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/data-center/storage.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">storage</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/data-center/networking.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">networking</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/data-center/sdi.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">software-defined infrastructure</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/data-center/services.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">services</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/data-center/software.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">software</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/data-center/support.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">support</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- Smart Devices Dropdown -->
-            <div class="smart-devices-dropdown">
-              <div class="flex" onclick="showSubMenu3()">
-                <a href="#">smart devices</a>
-                <i id="plus3" class="fas fa-plus fa-xs"></i>
-                <i id="minus3" class="fas fa-minus fa-xs"></i>
-              </div>
-              <div id="hidden-menu3" class="nav-menu-content-hidden">
-                <div class="nav-menu-dropdown-content">
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/smart-devices/smart-devices.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">smart devices</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/smart-devices/smart-home.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">smart home</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/smart-devices/smart-office.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">smart office</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/smart-devices/ar-vr.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">ar/vr</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/smart-devices/support.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">support</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
+              <!-- Smart Devices Dropdown -->
+              <div class="smart-devices-dropdown">
+                <div class="flex" onclick="showSubMenu3()">
+                  <a href="#">smart devices</a>
+                  <i id="plus3" class="fas fa-plus fa-xs"></i>
+                  <i id="minus3" class="fas fa-minus fa-xs"></i>
+                </div>
+                <div id="hidden-menu3" class="nav-menu-content-hidden">
+                  <div class="nav-menu-dropdown-content">
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/smart-devices/smart-devices.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">smart devices</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/smart-devices/smart-home.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">smart home</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/smart-devices/smart-office.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">smart office</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/smart-devices/ar-vr.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">ar/vr</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/smart-devices/support.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">support</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- Services Dropdown -->
-            <div class="services-dropdown">
-              <div class="flex" onclick="showSubMenu4()">
-                <a href="#">services</a>
-                <i id="plus4" class="fas fa-plus fa-xs"></i>
-                <i id="minus4" class="fas fa-minus fa-xs"></i>
-              </div>
-              <div id="hidden-menu4" class="nav-menu-content-hidden">
-                <div class="nav-menu-dropdown-content">
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/services/services.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#" class="uppercase">services</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/services/warranty.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">warranty lookup</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/services/pc-services.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">PC services</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/services/data-center.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">data center services</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/services/support.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">support</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
+              <!-- Services Dropdown -->
+              <div class="services-dropdown">
+                <div class="flex" onclick="showSubMenu4()">
+                  <a href="#">services</a>
+                  <i id="plus4" class="fas fa-plus fa-xs"></i>
+                  <i id="minus4" class="fas fa-minus fa-xs"></i>
+                </div>
+                <div id="hidden-menu4" class="nav-menu-content-hidden">
+                  <div class="nav-menu-dropdown-content">
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/services/services.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#" class="uppercase">services</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/services/warranty.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">warranty lookup</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/services/pc-services.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">PC services</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/services/data-center.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">data center services</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/services/support.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">support</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- About lenovo Dropdown -->
-            <div class="about-lenovo-dropdown">
-              <div class="flex" onclick="showSubMenu5()">
-                <a href="#">about lenovo</a>
-                <i id="plus5" class="fas fa-plus fa-xs"></i>
-                <i id="minus5" class="fas fa-minus fa-xs"></i>
-              </div>
-              <div id="hidden-menu5" class="nav-menu-content-hidden">
-                <div class="nav-menu-dropdown-content">
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/about-lenovo/about-lenovo.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#" class="uppercase">about lenovo</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/about-lenovo/diversity.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">diversity</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/about-lenovo/investor-relations.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">investors relations</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/about-lenovo/story-hub.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">story hub</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/about-lenovo/careers.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">careers</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/about-lenovo/sustainability.svg"
-                      type="image/svg+xml"
-                    ></object>
-                    <a href="#">sustainability</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
+              <!-- About lenovo Dropdown -->
+              <div class="about-lenovo-dropdown">
+                <div class="flex" onclick="showSubMenu5()">
+                  <a href="#">about lenovo</a>
+                  <i id="plus5" class="fas fa-plus fa-xs"></i>
+                  <i id="minus5" class="fas fa-minus fa-xs"></i>
+                </div>
+                <div id="hidden-menu5" class="nav-menu-content-hidden">
+                  <div class="nav-menu-dropdown-content">
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/about-lenovo/about-lenovo.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#" class="uppercase">about lenovo</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/about-lenovo/diversity.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">diversity</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/about-lenovo/investor-relations.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">investors relations</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/about-lenovo/story-hub.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">story hub</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/about-lenovo/careers.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">careers</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/about-lenovo/sustainability.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">sustainability</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- Lenovo Pro Dropdown -->
-            <div class="lenovopro-dropdown">
-              <div class="flex" onclick="showSubMenu6()">
-                <a href="#"
-                  ><object
-                    data="assets/lenovo_pro_sv.svg"
-                    type="image/svg+xml"
-                  ></object
-                ></a>
-                <i id="plus6" class="fas fa-plus fa-xs"></i>
-                <i id="minus6" class="fas fa-minus fa-xs"></i>
-              </div>
-              <div id="hidden-menu6" class="nav-menu-content-hidden">
-                <div class="nav-menu-dropdown-content">
-                  <div>
-                    <a href="#">sign in to lenovoPRO</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                  </div>
-                  <div>
-                    <object
-                      class="nav-menu-icon-primary"
-                      data="assets/nav-bar/smart-devices/smart-home.svg"
+              <!-- Lenovo Pro Dropdown -->
+              <div class="lenovopro-dropdown">
+                <div class="flex" onclick="showSubMenu6()">
+                  <a href="#"
+                    ><object
+                      data="assets/lenovo_pro_sv.svg"
                       type="image/svg+xml"
-                    ></object>
-                    <a href="#">Learn more</a>
-                    <i class="fas fa-chevron-right fa-xs"></i>
+                    ></object
+                  ></a>
+                  <i id="plus6" class="fas fa-plus fa-xs"></i>
+                  <i id="minus6" class="fas fa-minus fa-xs"></i>
+                </div>
+                <div id="hidden-menu6" class="nav-menu-content-hidden">
+                  <div class="nav-menu-dropdown-content">
+                    <div>
+                      <a href="#">sign in to lenovoPRO</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div>
+                      <object
+                        class="nav-menu-icon-primary"
+                        data="assets/nav-bar/smart-devices/smart-home.svg"
+                        type="image/svg+xml"
+                      ></object>
+                      <a href="#">Learn more</a>
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div>
-          <form class="search-filled" action="#">
-            <input type="text" placeholder="WHAT ARE YOU LOOKING FOR?" />
-            <button class="search-btn" type="submit">
-              <i class="fas fa-search fa-lg"></i>
-            </button>
-          </form>
+          <div>
+            <form class="search-filled" action="#">
+              <input type="text" placeholder="WHAT ARE YOU LOOKING FOR?" />
+              <button class="search-btn" type="submit">
+                <i class="fas fa-search fa-lg"></i>
+              </button>
+            </form>
+          </div>
         </div>
       </section>
 
