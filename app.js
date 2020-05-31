@@ -635,10 +635,11 @@ customerSupportBtn = document.getElementById("customerSupportBtn");
 
 function aboutLenovo() {
   if (!aboutLenovoBtn.style.display || aboutLenovoBtn.style.display == "none") {
-    minusImage1 = document.getElementById("plus1").src = "/assets/minus.png";
+    minusImage1 = document.getElementById("plusIcon1").src =
+      "/assets/minus.png";
     aboutLenovoBtn.style.display = "block";
   } else {
-    minusImage1 = document.getElementById("plus1").src = "/assets/plus.png";
+    minusImage1 = document.getElementById("plusIcon1").src = "/assets/plus.png";
     aboutLenovoBtn.style.display = "none";
   }
 }
@@ -648,10 +649,11 @@ function productService() {
     !productServiceBtn.style.display ||
     productServiceBtn.style.display == "none"
   ) {
-    minusImage2 = document.getElementById("plus2").src = "/assets/minus.png";
+    minusImage2 = document.getElementById("plusIcon2").src =
+      "/assets/minus.png";
     productServiceBtn.style.display = "block";
   } else {
-    minusImage2 = document.getElementById("plus2").src = "/assets/plus.png";
+    minusImage2 = document.getElementById("plusIcon2").src = "/assets/plus.png";
     productServiceBtn.style.display = "none";
   }
 }
@@ -661,20 +663,22 @@ function shopIndustry() {
     !shopIndustryBtn.style.display ||
     shopIndustryBtn.style.display == "none"
   ) {
-    minusImage3 = document.getElementById("plus3").src = "/assets/minus.png";
+    minusImage3 = document.getElementById("plusIcon3").src =
+      "/assets/minus.png";
     shopIndustryBtn.style.display = "block";
   } else {
-    minusImage3 = document.getElementById("plus3").src = "/assets/plus.png";
+    minusImage3 = document.getElementById("plusIcon3").src = "/assets/plus.png";
     shopIndustryBtn.style.display = "none";
   }
 }
 
 function resources() {
   if (!resourcesBtn.style.display || resourcesBtn.style.display == "none") {
-    minusImage4 = document.getElementById("plus4").src = "/assets/minus.png";
+    minusImage4 = document.getElementById("plusIcon4").src =
+      "/assets/minus.png";
     resourcesBtn.style.display = "block";
   } else {
-    minusImage4 = document.getElementById("plus4").src = "/assets/plus.png";
+    minusImage4 = document.getElementById("plusIcon4").src = "/assets/plus.png";
     resourcesBtn.style.display = "none";
   }
 }
@@ -684,10 +688,11 @@ function customerSupport() {
     !customerSupportBtn.style.display ||
     customerSupportBtn.style.display == "none"
   ) {
-    minusImage5 = document.getElementById("plus5").src = "/assets/minus.png";
+    minusImage5 = document.getElementById("plusIcon5").src =
+      "/assets/minus.png";
     customerSupportBtn.style.display = "block";
   } else {
-    minusImage5 = document.getElementById("plus5").src = "/assets/plus.png";
+    minusImage5 = document.getElementById("plusIcon5").src = "/assets/plus.png";
     customerSupportBtn.style.display = "none";
   }
 }
