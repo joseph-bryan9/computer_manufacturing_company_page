@@ -16,7 +16,6 @@ menuBtn.addEventListener("click", () => {
   } else {
     menuBtn.classList.remove("open");
     exploreBtn.style.visibility = "visible";
-    showMenu.style.display = "none";
     menuOpen = false;
   }
 });
@@ -84,63 +83,172 @@ function stickNavbar3() {
 }
 
 // Burger-menu
-var showMenu, burgerBtn;
+var showMenu,
+  minus,
+  minus2,
+  minus3,
+  minus4,
+  minus5,
+  minus6,
+  plus,
+  plus2,
+  plus3,
+  plus4,
+  plus5,
+  plus6,
+  navMenuHidden1,
+  navMenuHidden2,
+  navMenuHidden3,
+  navMenuHidden4,
+  navMenuHidden5,
+  navMenuHidden6;
 
+// Burger menu displayed by default for mobile (showBurgerMenu)
 function showBurgerMenu() {
   showMenu = document.getElementById("id-burger-dropdown-content");
+  navMenuHidden1 = document.getElementById("hidden-menu1");
+  navMenuHidden2 = document.getElementById("hidden-menu2");
+  navMenuHidden3 = document.getElementById("hidden-menu3");
+  navMenuHidden4 = document.getElementById("hidden-menu4");
+  navMenuHidden5 = document.getElementById("hidden-menu5");
+  navMenuHidden6 = document.getElementById("hidden-menu6");
+  minus = document.getElementById("minus");
+  minus2 = document.getElementById("minus2");
+  minus3 = document.getElementById("minus3");
+  minus4 = document.getElementById("minus4");
+  minus5 = document.getElementById("minus5");
+  minus6 = document.getElementById("minus6");
+  plus = document.getElementById("plus");
+  plus2 = document.getElementById("plus2");
+  plus3 = document.getElementById("plus3");
+  plus4 = document.getElementById("plus4");
+  plus5 = document.getElementById("plus5");
+  plus6 = document.getElementById("plus6");
 
-  let burgerMenu = showMenu.style.display == "none";
-  burgerMenu = showMenu.style.display == "block";
-  switch (burgerMenu) {
-    case showMenu.style.display == "none":
-      showMenu.style.display = "block";
-      break;
-    case showMenu.style.display == "block":
-      showMenu.style.display = "none";
-      location.reload();
-      break;
-    default:
-      showMenu.style.display = "none";
+  if (!showMenu.style.display || showMenu.style.display == "none") {
+    showMenu.style.display = "block";
+    document.body.style.overflowY = "hidden";
+  } else if (showMenu.style.display || showMenu.style.display == "block") {
+    navMenuHidden1.style.display = "none";
+    navMenuHidden2.style.display = "none";
+    navMenuHidden3.style.display = "none";
+    navMenuHidden4.style.display = "none";
+    navMenuHidden5.style.display = "none";
+    navMenuHidden6.style.display = "none";
+    minus.style.display = "none";
+    minus2.style.display = "none";
+    minus3.style.display = "none";
+    minus4.style.display = "none";
+    minus5.style.display = "none";
+    minus6.style.display = "none";
+    plus.style.display = "block";
+    plus2.style.display = "block";
+    plus3.style.display = "block";
+    plus4.style.display = "block";
+    plus5.style.display = "block";
+    plus6.style.display = "block";
+    showMenu.style.display = "none";
+    document.body.style.overflowY = "scroll";
   }
 }
 
+// Burger menu hidden by default for mobile / Displayed when scrolled down (showBurgerMenu1a)
 function showBurgerMenu1a() {
   showMenu = document.getElementById("id-burger-dropdown-content-1-a");
+  navMenuHidden1 = document.getElementById("hidden-menu1-a");
+  navMenuHidden2 = document.getElementById("hidden-menu2-a");
+  navMenuHidden3 = document.getElementById("hidden-menu3-a");
+  navMenuHidden4 = document.getElementById("hidden-menu4-a");
+  navMenuHidden5 = document.getElementById("hidden-menu5-a");
+  navMenuHidden6 = document.getElementById("hidden-menu6-a");
+  minus = document.getElementById("minus1-a");
+  minus2 = document.getElementById("minus2-a");
+  minus3 = document.getElementById("minus3-a");
+  minus4 = document.getElementById("minus4-a");
+  minus5 = document.getElementById("minus5-a");
+  minus6 = document.getElementById("minus6-a");
+  plus = document.getElementById("plus1-a");
+  plus2 = document.getElementById("plus2-a");
+  plus3 = document.getElementById("plus3-a");
+  plus4 = document.getElementById("plus4-a");
+  plus5 = document.getElementById("plus5-a");
+  plus6 = document.getElementById("plus6-a");
 
-  let burgerMenu = showMenu.style.display == "none";
-  burgerMenu = showMenu.style.display == "block";
-  switch (burgerMenu) {
-    case showMenu.style.display == "none":
-      showMenu.style.display = "block";
-      break;
-    case showMenu.style.display == "block":
-      showMenu.style.display = "none";
-      location.reload();
-      break;
-    default:
-      showMenu.style.display = "none";
+  if (!showMenu.style.display || showMenu.style.display == "none") {
+    showMenu.style.display = "block";
+    document.body.style.overflowY = "hidden";
+  } else if (showMenu.style.display || showMenu.style.display == "block") {
+    navMenuHidden1.style.display = "none";
+    navMenuHidden2.style.display = "none";
+    navMenuHidden3.style.display = "none";
+    navMenuHidden4.style.display = "none";
+    navMenuHidden5.style.display = "none";
+    navMenuHidden6.style.display = "none";
+    minus.style.display = "none";
+    minus2.style.display = "none";
+    minus3.style.display = "none";
+    minus4.style.display = "none";
+    minus5.style.display = "none";
+    minus6.style.display = "none";
+    plus.style.display = "block";
+    plus2.style.display = "block";
+    plus3.style.display = "block";
+    plus4.style.display = "block";
+    plus5.style.display = "block";
+    plus6.style.display = "block";
+    showMenu.style.display = "none";
+    document.body.style.overflowY = "scroll";
   }
 }
 
-function showBurgerMenu2() {
+// Burger menu for tablets (showBurgerMenuTwo)
+function showBurgerMenuTwo() {
   showMenu = document.getElementById("id-burger-dropdown-content-2");
+  navMenuHidden1 = document.getElementById("hidden-menu1a");
+  navMenuHidden2 = document.getElementById("hidden-menu2a");
+  navMenuHidden3 = document.getElementById("hidden-menu3a");
+  navMenuHidden4 = document.getElementById("hidden-menu4a");
+  navMenuHidden5 = document.getElementById("hidden-menu5a");
+  navMenuHidden6 = document.getElementById("hidden-menu6a");
+  minus = document.getElementById("minus1a");
+  minus2 = document.getElementById("minus2a");
+  minus3 = document.getElementById("minus3a");
+  minus4 = document.getElementById("minus4a");
+  minus5 = document.getElementById("minus5a");
+  minus6 = document.getElementById("minus6a");
+  plus = document.getElementById("plus1a");
+  plus2 = document.getElementById("plus2a");
+  plus3 = document.getElementById("plus3a");
+  plus4 = document.getElementById("plus4a");
+  plus5 = document.getElementById("plus5a");
+  plus6 = document.getElementById("plus6a");
 
-  let burgerMenu = showMenu.style.display == "none";
-  burgerMenu = showMenu.style.display == "block";
-  switch (burgerMenu) {
-    case showMenu.style.display == "none":
-      showMenu.style.display = "block";
-      break;
-    case showMenu.style.display == "block":
-      showMenu.style.display = "none";
-      location.reload();
-      break;
-    default:
-      showMenu.style.display = "none";
+  if (!showMenu.style.display || showMenu.style.display == "none") {
+    showMenu.style.display = "block";
+  } else if (showMenu.style.display || showMenu.style.display == "block") {
+    navMenuHidden1.style.display = "none";
+    navMenuHidden2.style.display = "none";
+    navMenuHidden3.style.display = "none";
+    navMenuHidden4.style.display = "none";
+    navMenuHidden5.style.display = "none";
+    navMenuHidden6.style.display = "none";
+    minus.style.display = "none";
+    minus2.style.display = "none";
+    minus3.style.display = "none";
+    minus4.style.display = "none";
+    minus5.style.display = "none";
+    minus6.style.display = "none";
+    plus.style.display = "block";
+    plus2.style.display = "block";
+    plus3.style.display = "block";
+    plus4.style.display = "block";
+    plus5.style.display = "block";
+    plus6.style.display = "block";
+    showMenu.style.display = "none";
   }
 }
 
-// Burger-menu sub-menu for Mobile
+// Burger menu sub-menu displayed by default for mobile (showBurgerMenu)
 var navMenuHidden, plus, minus;
 
 function showSubMenu() {
@@ -157,6 +265,18 @@ function showSubMenu() {
     navMenuHidden.style.display = "none";
     plus.style.display = "block";
     minus.style.display = "none";
+    event.stopPropagation();
+  }
+}
+
+function showSubMenuPhone() {
+  navMenuHidden = document.getElementById("hidden-menu1");
+  plus = document.getElementById("plus");
+  minus = document.getElementById("minus");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    event.stopPropagation();
+  } else {
     event.stopPropagation();
   }
 }
@@ -251,6 +371,7 @@ function showSubMenu6() {
   }
 }
 
+// Burger menu sub-menu hidden by default for mobile / Displayed when scrolled down (showBurgerMenu1a)
 function showSubMenu1a() {
   navMenuHidden = document.getElementById("hidden-menu1-a");
   plus = document.getElementById("plus1-a");
@@ -265,6 +386,18 @@ function showSubMenu1a() {
     navMenuHidden.style.display = "none";
     plus.style.display = "block";
     minus.style.display = "none";
+    event.stopPropagation();
+  }
+}
+
+function showSubMenuPhonea() {
+  navMenuHidden = document.getElementById("hidden-menu1-a");
+  plus = document.getElementById("plus1-a");
+  minus = document.getElementById("minus1-a");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    event.stopPropagation();
+  } else {
     event.stopPropagation();
   }
 }
@@ -359,6 +492,125 @@ function showSubMenu6a() {
   }
 }
 
+// Burger menu sub-menu for tablets (showBurgerMenuTwo)
+function showSubMenuTwoA() {
+  navMenuHidden = document.getElementById("hidden-menu1a");
+  plus = document.getElementById("plus1a");
+  minus = document.getElementById("minus1a");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    navMenuHidden.style.display = "block";
+    plus.style.display = "none";
+    minus.style.display = "block";
+    event.stopPropagation();
+  } else {
+    navMenuHidden.style.display = "none";
+    plus.style.display = "block";
+    minus.style.display = "none";
+    event.stopPropagation();
+  }
+}
+
+function showSubMenuPhoneA() {
+  navMenuHidden = document.getElementById("hidden-menu1a");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    event.stopPropagation();
+  } else {
+    event.stopPropagation();
+  }
+}
+
+function showSubMenuTwoB() {
+  navMenuHidden = document.getElementById("hidden-menu2a");
+  plus = document.getElementById("plus2a");
+  minus = document.getElementById("minus2a");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    navMenuHidden.style.display = "block";
+    plus.style.display = "none";
+    minus.style.display = "block";
+    event.stopPropagation();
+  } else {
+    navMenuHidden.style.display = "none";
+    plus.style.display = "block";
+    minus.style.display = "none";
+    event.stopPropagation();
+  }
+}
+
+function showSubMenuTwoC() {
+  navMenuHidden = document.getElementById("hidden-menu3a");
+  plus = document.getElementById("plus3a");
+  minus = document.getElementById("minus3a");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    navMenuHidden.style.display = "block";
+    plus.style.display = "none";
+    minus.style.display = "block";
+    event.stopPropagation();
+  } else {
+    navMenuHidden.style.display = "none";
+    plus.style.display = "block";
+    minus.style.display = "none";
+    event.stopPropagation();
+  }
+}
+
+function showSubMenuTwoD() {
+  navMenuHidden = document.getElementById("hidden-menu4a");
+  plus = document.getElementById("plus4a");
+  minus = document.getElementById("minus4a");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    navMenuHidden.style.display = "block";
+    plus.style.display = "none";
+    minus.style.display = "block";
+    event.stopPropagation();
+  } else {
+    navMenuHidden.style.display = "none";
+    plus.style.display = "block";
+    minus.style.display = "none";
+    event.stopPropagation();
+  }
+}
+
+function showSubMenuTwoE() {
+  navMenuHidden = document.getElementById("hidden-menu5a");
+  plus = document.getElementById("plus5a");
+  minus = document.getElementById("minus5a");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    navMenuHidden.style.display = "block";
+    plus.style.display = "none";
+    minus.style.display = "block";
+    event.stopPropagation();
+  } else {
+    navMenuHidden.style.display = "none";
+    plus.style.display = "block";
+    minus.style.display = "none";
+    event.stopPropagation();
+  }
+}
+
+function showSubMenuTwoF() {
+  navMenuHidden = document.getElementById("hidden-menu6a");
+  plus = document.getElementById("plus6a");
+  minus = document.getElementById("minus6a");
+
+  if (!navMenuHidden.style.display || navMenuHidden.style.display == "none") {
+    navMenuHidden.style.display = "block";
+    plus.style.display = "none";
+    minus.style.display = "block";
+    event.stopPropagation();
+  } else {
+    navMenuHidden.style.display = "none";
+    plus.style.display = "block";
+    minus.style.display = "none";
+    event.stopPropagation();
+  }
+}
+
 // About/ Products & Service/ Shop By/ Resources/ Customer Support
 var minusImage1,
   minusImage2,
@@ -382,7 +634,7 @@ resourcesBtn = document.getElementById("resourcesBtn");
 customerSupportBtn = document.getElementById("customerSupportBtn");
 
 function aboutLenovo() {
-  if (!aboutLenovoBtn.style.opacity || aboutLenovoBtn.style.opacity == "0") {
+  if (!aboutLenovoBtn.style.display || aboutLenovoBtn.style.display == "none") {
     minusImage1 = document.getElementById("plus1").src = "/assets/minus.png";
     aboutLenovoBtn.style.display = "block";
   } else {

@@ -51,8 +51,8 @@
       <!-- Header-menu-2 Hidden by default -->
       <section id="header-menu-2">
         <div class="burger-search-flex">
-          <div class="burger-dropdown" onclick="showBurgerMenu1a()">
-            <div class="menu-btn1a">
+          <div class="burger-dropdown">
+            <div class="menu-btn1a" onclick="showBurgerMenu1a()">
               <div class="menu-btn__burger"></div>
             </div>
             <a href="#" class="explore-1a">explore</a>
@@ -175,7 +175,7 @@
                 </div>
               </div>
               <div class="phones-btn">
-                <div class="flex">
+                <div class="flex" onclick="showSubMenuPhonea()">
                   <a href="#">phones</a
                   ><i class="fas fa-chevron-right fa-xs"></i>
                 </div>
@@ -514,8 +514,8 @@
       <!-- Header-menu 750px Section -->
       <section id="header-menu-3" class="header-grid-750px">
         <div class="header-grid-750px-grid">
-          <div class="burger-dropdown" onclick="showBurgerMenu2()">
-            <div class="menu-btn2">
+          <div class="burger-dropdown">
+            <div class="menu-btn2" onclick="showBurgerMenuTwo()">
               <div class="menu-btn__burger"></div>
             </div>
             <a href="#" class="explore-2">explore</a>
@@ -525,7 +525,7 @@
             >
               <!-- PC & Tablets Dropdown -->
               <div class="pc-tablets-dropdown">
-                <div class="flex" onclick="showSubMenu1a()">
+                <div class="flex" onclick="showSubMenuTwoA()">
                   <a href="#">pc & tablets</a>
                   <i id="plus1a" class="fas fa-plus fa-xs"></i>
                   <i id="minus1a" class="fas fa-minus fa-xs"></i>
@@ -638,14 +638,14 @@
                 </div>
               </div>
               <div class="phones-btn">
-                <div class="flex">
+                <div class="flex" onclick="showSubMenuPhoneA()">
                   <a href="#">phones</a
                   ><i class="fas fa-chevron-right fa-xs"></i>
                 </div>
               </div>
               <!-- Data Center Dropdown -->
               <div class="data-center-dropdown">
-                <div class="flex" onclick="showSubMenu2a()">
+                <div class="flex" onclick="showSubMenuTwoB()">
                   <a href="#">data center</a>
                   <i id="plus2a" class="fas fa-plus fa-xs"></i>
                   <i id="minus2a" class="fas fa-minus fa-xs"></i>
@@ -738,7 +738,7 @@
               </div>
               <!-- Smart Devices Dropdown -->
               <div class="smart-devices-dropdown">
-                <div class="flex" onclick="showSubMenu3a()">
+                <div class="flex" onclick="showSubMenuTwoC()">
                   <a href="#">smart devices</a>
                   <i id="plus3a" class="fas fa-plus fa-xs"></i>
                   <i id="minus3a" class="fas fa-minus fa-xs"></i>
@@ -795,7 +795,7 @@
               </div>
               <!-- Services Dropdown -->
               <div class="services-dropdown">
-                <div class="flex" onclick="showSubMenu4a()">
+                <div class="flex" onclick="showSubMenuTwoD()">
                   <a href="#">services</a>
                   <i id="plus4a" class="fas fa-plus fa-xs"></i>
                   <i id="minus4a" class="fas fa-minus fa-xs"></i>
@@ -852,7 +852,7 @@
               </div>
               <!-- About lenovo Dropdown -->
               <div class="about-lenovo-dropdown">
-                <div class="flex" onclick="showSubMenu5a()">
+                <div class="flex" onclick="showSubMenuTwoE()">
                   <a href="#">about lenovo</a>
                   <i id="plus5a" class="fas fa-plus fa-xs"></i>
                   <i id="minus5a" class="fas fa-minus fa-xs"></i>
@@ -918,7 +918,7 @@
               </div>
               <!-- Lenovo Pro Dropdown -->
               <div class="lenovopro-dropdown">
-                <div class="flex" onclick="showSubMenu6a()">
+                <div class="flex" onclick="showSubMenuTwoF()">
                   <a href="#"
                     ><object
                       data="assets/lenovo_pro_sv.svg"
@@ -1509,11 +1509,11 @@
       <!-- Burger-menu & Search-box Section -->
       <section id="burger-menu">
         <div class="burger-search-flex">
-          <div class="burger-dropdown" onclick="showBurgerMenu()">
-            <div class="menu-btn">
+          <div class="burger-dropdown">
+            <div class="menu-btn" onclick="showBurgerMenu()">
               <div class="menu-btn__burger"></div>
             </div>
-            <a href="#" class="explore-1" onclick="showBurgerMenu()">explore</a>
+            <a href="#" class="explore-1">explore</a>
             <div
               id="id-burger-dropdown-content"
               class="burger-dropdown-content"
@@ -1633,7 +1633,7 @@
                 </div>
               </div>
               <div class="phones-btn">
-                <div class="flex">
+                <div class="flex" onclick="showSubMenuPhone()">
                   <a href="#">phones</a
                   ><i class="fas fa-chevron-right fa-xs"></i>
                 </div>
@@ -2008,16 +2008,14 @@
         </div>
         <div>
           <a href="#"
-            ><img src="/assets/card-3.jpg" alt="" /><span class="third-span"
+            ><img src="/assets/card-3.jpg" alt="" /><span
               >Smart Devices</span
             ></a
           >
         </div>
         <div>
           <a href="#"
-            ><img src="/assets/card-4.jpg" alt="" /><span class="fourth-span"
-              >Data Center</span
-            ></a
+            ><img src="/assets/card-4.jpg" alt="" /><span>Data Center</span></a
           >
         </div>
       </section>
@@ -2055,7 +2053,7 @@
             </div>
             <div>
               <a href="#"
-                ><img src="/assets/card-3.jpg" alt="" /><span
+                ><img src="/assets/card-3.jpg" alt="" /><span class="third-span"
                   >Smart Devices</span
                 ></a
               >
@@ -2063,6 +2061,7 @@
             <div>
               <a href="#"
                 ><img src="/assets/card-4.jpg" alt="" /><span
+                  class="fourth-span"
                   >Data Center</span
                 ></a
               >
