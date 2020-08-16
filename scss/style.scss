@@ -1320,7 +1320,7 @@ a {
       }
     }
 
-    img:hover, .test:hover img {
+    img:hover {
       // Media Query 1180px
       @include mediaQuery(73.75em) {
         opacity: 1;

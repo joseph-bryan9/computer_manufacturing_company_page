@@ -1499,7 +1499,7 @@ a {
 }
 
 @media screen and (min-width: 73.75em) {
-  .showcase-1180px .showcase-cards-1180px img:hover, .showcase-1180px .showcase-cards-1180px .test:hover img {
+  .showcase-1180px .showcase-cards-1180px img:hover {
     opacity: 1;
   }
 }
