@@ -696,3 +696,21 @@ function customerSupport() {
     customerSupportBtn.style.display = "none";
   }
 }
+
+// When screen size is on mobile devices or tablets, run this script for video
+window.addEventListener("load", function () {
+  const vidBg = document.getElementById("vid-bg");
+
+  const visible =
+    vidBg.offsetWidth || vidBg.offsetHeight || vidBg.getClientRects().length;
+
+  if (visible) {
+    const children = vidBg.getElementsByTagName("source");
+
+    for (let i = 0; i < children.length; ++i) {
+      children[i].src = children[i].dataset.src;
+    }
+  }
+
+  vidBg.load();
+});
