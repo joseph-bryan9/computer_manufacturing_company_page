@@ -700,9 +700,12 @@ function customerSupport() {
 // When screen size is on mobile devices or tablets, run this script for video
 window.addEventListener("load", function () {
   const vidBg = document.getElementById("vid-bg");
+  const vidBg2 = document.getElementById("vid-bg-2");
 
   const visible =
     vidBg.offsetWidth || vidBg.offsetHeight || vidBg.getClientRects().length;
+  const visibile2 =
+    vidBg2.offsetWidth || vidBg2.offsetHeight || vidBg2.getClientRects().length;
 
   if (visible) {
     const children = vidBg.getElementsByTagName("source");
@@ -712,5 +715,14 @@ window.addEventListener("load", function () {
     }
   }
 
+  if (visibile2) {
+    const children = vidBg2.getElementsByTagName("source");
+
+    for (let i = 0; i < children.length; ++i) {
+      children[i].src = children[i].dataset.src;
+    }
+  }
+
   vidBg.load();
+  vidBg2.load();
 });
