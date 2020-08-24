@@ -11,4 +11,4 @@ This is a sample webpage design (replica) showcasing Lenovo's innovative product
 May 2020 version.
 
 ## Acknowledgement
-I would like to thank Lenovo for giving me the inspiration to recreate their cutting edge website (Demo purposes only.)
+I would like to thank Lenovo for giving me the inspiration to recreate their cutting edge website for demo purposes only.
