@@ -6,7 +6,7 @@ This is a sample webpage design (replica) showcasing Lenovo's innovative product
 
 - (S) CSS
 - HTML
-- Javascript
+- Vanilla Javascript
 
 ## Versioning
 
